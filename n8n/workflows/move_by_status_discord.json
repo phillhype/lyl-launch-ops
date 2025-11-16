@@ -1,0 +1,65 @@
+{
+  "name": "LYL - ClickUp move by status + Discord notify",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {
+        "event": "taskUpdated"
+      },
+      "id": "clickupTrigger",
+      "name": "ClickUp Trigger",
+      "type": "n8n-nodes-base.clickUpTrigger",
+      "typeVersion": 2,
+      "position": [260, 240],
+      "webhookId": ""
+    },
+    {
+      "parameters": {
+        "resource": "task",
+        "operation": "update",
+        "taskId": "={{$json.body.task_id}}",
+        "additionalFields": {
+          "list": "={{$json.body.status.status === 'em revisão' ? $json.body.list_id_destino_revisao : $json.body.list_id}}"
+        }
+      },
+      "id": "moveTask",
+      "name": "Mover quando 'em revisão'",
+      "type": "n8n-nodes-base.clickUp",
+      "typeVersion": 2,
+      "position": [560, 240],
+      "credentials": {
+        "clickUpApi": {
+          "id": "REPLACE_WITH_YOUR_CREDENTIAL_ID",
+          "name": "LYL ClickUp"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "={{$json.body.status.status === 'concluído' ? $json.env.DISCORD_WEBHOOK_APROVADOS : $json.env.DISCORD_WEBHOOK_GERAL}}",
+        "method": "POST",
+        "jsonParameters": true,
+        "options": {},
+        "bodyParametersJson": "={\"username\":\"LYL Bot\",\"content\":`Tarefa **${$json.body.task_name}** alterou status para **${$json.body.status.status}**`}"
+      },
+      "id": "notifyDiscord",
+      "name": "Notificar Discord",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [820, 240]
+    }
+  ],
+  "connections": {
+    "ClickUp Trigger": {
+      "main": [
+        [{ "node": "Mover quando 'em revisão'", "type": "main", "index": 0 }]
+      ]
+    },
+    "Mover quando 'em revisão'": {
+      "main": [
+        [{ "node": "Notificar Discord", "type": "main", "index": 0 }]
+      ]
+    }
+  },
+  "settings": {}
+}

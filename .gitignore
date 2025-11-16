@@ -1,0 +1,14 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Env
+.env
+*.env
+
+# macOS
+.DS_Store
+
+# n8n export temporário
+*.backup.json
