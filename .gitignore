@@ -7,6 +7,9 @@ __pycache__/
 .env
 *.env
 
+# Cache
+scripts/.cache_*.json
+
 # macOS
 .DS_Store
 

@@ -8,6 +8,7 @@ load_dotenv()
 API = "https://api.clickup.com/api/v2"
 TOKEN = os.getenv("CLICKUP_TOKEN")
 TEAM  = os.getenv("CLICKUP_TEAM")
+SPACE_ID = os.getenv("CLICKUP_SPACE_ID")  # Opcional: se definido, pula busca por nome
 
 if not TOKEN or not TEAM:
     print("Erro: defina CLICKUP_TOKEN e CLICKUP_TEAM no .env")
@@ -46,18 +47,25 @@ def collect_lists_in_space(space_id):
     # listas no root do space
     try:
         data = get(f"{API}/space/{space_id}/list")
-        lists += data.get("lists", [])
-    except Exception:
-        pass
+        root_lists = data.get("lists", [])
+        lists += root_lists
+        print(f"  → Listas no root do Space: {len(root_lists)}")
+    except Exception as e:
+        print(f"  ⚠️ Erro ao buscar listas no root: {e}")
 
     # listas dentro de pastas
     try:
         fd = get(f"{API}/space/{space_id}/folder")
-        for folder in fd.get("folders", []):
+        folders = fd.get("folders", [])
+        print(f"  → Pastas encontradas: {len(folders)}")
+        for folder in folders:
+            print(f"     • Pasta: '{folder['name']}' (ID: {folder['id']})")
             ld = get(f"{API}/folder/{folder['id']}/list")
-            lists += ld.get("lists", [])
-    except Exception:
-        pass
+            folder_lists = ld.get("lists", [])
+            print(f"       - Listas na pasta: {len(folder_lists)}")
+            lists += folder_lists
+    except Exception as e:
+        print(f"  ⚠️ Erro ao buscar pastas/listas: {e}")
     return lists
 
 def normalize_name(n):
@@ -66,13 +74,25 @@ def normalize_name(n):
     return n
 
 def main():
-    op_space = find_space_id_by_name(TEAM, "Operação LYL")
-    if not op_space:
-        print("❌ Space 'Operação LYL' não encontrado. Crie-o antes.")
-        sys.exit(1)
+    # Usar SPACE_ID do .env se fornecido, senão buscar por nome
+    if SPACE_ID:
+        print(f"✅ Usando Space ID do .env: {SPACE_ID}")
+        op_space = SPACE_ID
+    else:
+        op_space = find_space_id_by_name(TEAM, "Operação LYL")
+        if not op_space:
+            print("❌ Space 'Operação LYL' não encontrado. Crie-o antes.")
+            sys.exit(1)
 
     all_lists = collect_lists_in_space(op_space)
     by_norm = { normalize_name(l["name"]): l for l in all_lists }
+
+    # Mostrar TODAS as listas encontradas no Space
+    print(f"\n📋 LISTAS ENCONTRADAS no Space (total: {len(all_lists)}):")
+    for lst in all_lists:
+        norm = normalize_name(lst["name"])
+        print(f"  • '{lst['name']}' → normalizado: '{norm}' (ID: {lst['id']})")
+    print()
 
     wanted = {a: None for a in AREAS_CANON}
     for key in by_norm:
