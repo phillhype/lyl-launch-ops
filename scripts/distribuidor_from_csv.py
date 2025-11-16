@@ -14,6 +14,7 @@ if not TOKEN or not TEAM:
     sys.exit(1)
 
 CACHE_MAP = os.path.join("scripts", ".cache_lists_map.json")
+OVERRIDE_MAP = os.path.join("scripts", "lists_map.override.json")
 
 DATE_INPUT_FORMATS = ["%d/%m/%Y","%d/%m"]  # cai no ano atual se faltar ano
 YEAR_DEFAULT = int(os.getenv("LAUNCH_YEAR", datetime.now().year))
@@ -58,9 +59,21 @@ def get(url, params=None):
     return None
 
 def load_map():
+    """Carrega mapeamento de áreas -> list_ids
+    Prioridade: override.json > cache.json
+    """
+    if os.path.exists(OVERRIDE_MAP):
+        print(f"📝 Usando mapeamento de: {OVERRIDE_MAP}")
+        with open(OVERRIDE_MAP, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            return data.get("mapping", {})
+
     if not os.path.exists(CACHE_MAP):
-        print("Erro: não encontrei", CACHE_MAP, "rode `make retrofit` antes.")
+        print("Erro: não encontrei", CACHE_MAP, "nem", OVERRIDE_MAP)
+        print("Rode `make retrofit` antes.")
         sys.exit(1)
+
+    print(f"💾 Usando mapeamento de: {CACHE_MAP}")
     with open(CACHE_MAP, "r", encoding="utf-8") as f:
         return json.load(f)["lists"]
 
@@ -88,12 +101,17 @@ KEYS_MAP = {
     "tipo": "tipo",
     "grupo": "grupo",
     "status": "status",
-    "data inicial": "Data inicial",
-    "data final": "Data final",
-    "dificuldade": "Dificuldade",
-    "duração": "Duração",
-    "prioridade": "Prioridade",
-    "checkpoint": "Checkpoint",
+    "data inicial": "data_inicial",
+    "data inicial relativa": "data_inicial",
+    "data_inicio_relativa": "data_inicial",
+    "data final": "data_final",
+    "data final relativa": "data_final",
+    "data_entrega_relativa": "data_final",
+    "dificuldade": "dificuldade",
+    "duração": "duracao_dias",
+    "duracao_dias": "duracao_dias",
+    "prioridade": "prioridade",
+    "checkpoint": "checkpoint",
 }
 
 def normalize_row(row):
@@ -103,20 +121,28 @@ def normalize_row(row):
         out[k2] = v
     return out
 
-def ensure_tags(list_id):
-    # Nada a fazer. Tags são por tarefa, não por lista.
-    return
+def get_custom_fields(list_id):
+    """Busca custom fields da lista"""
+    try:
+        data = get(f"{API}/list/{list_id}/field")
+        return {f['name'].lower(): f for f in data.get('fields', [])}
+    except:
+        return {}
 
-def create_task(list_id, row):
+def create_task(list_id, row, dry_run=False):
     name = row.get("nome") or "(sem título)"
-    status = row.get("status") or "Programado"
-    start = parse_date(row.get("Data inicial"))
-    due   = parse_date(row.get("Data final"))
+    status = row.get("status") or "backlog"
+    start = parse_date(row.get("data_inicial"))
+    due   = parse_date(row.get("data_final"))
     expert_tag = row.get("expert")
+
     priority_map = {
         "baixa":1,"moderada":2,"alta":3,"crítica":4,"critica":4
     }
-    prio = priority_map.get(norm_key(row.get("Prioridade","")), None)
+    prio = priority_map.get(norm_key(row.get("prioridade","")), None)
+
+    # Detectar checkpoint
+    is_checkpoint = norm_key(row.get("checkpoint", "")) in ["sim", "true", "1", "x"]
 
     payload = {
         "name": name,
@@ -128,47 +154,199 @@ def create_task(list_id, row):
         "due_date_time": False,
         "tags": [expert_tag] if expert_tag else []
     }
+
+    # Custom fields (sprint, fase, tipo, dificuldade, duracao_dias, grupo)
+    custom_fields = []
+
+    # Buscar custom fields da lista (só se não for dry-run)
+    if not dry_run:
+        fields_def = get_custom_fields(list_id)
+
+        # Sprint (text)
+        if row.get("sprint") and "sprint" in fields_def:
+            custom_fields.append({
+                "id": fields_def["sprint"]["id"],
+                "value": row["sprint"]
+            })
+
+        # Fase (dropdown)
+        if row.get("fase") and "fase" in fields_def:
+            custom_fields.append({
+                "id": fields_def["fase"]["id"],
+                "value": row["fase"]
+            })
+
+        # Tipo (dropdown)
+        if row.get("tipo") and "tipo" in fields_def:
+            custom_fields.append({
+                "id": fields_def["tipo"]["id"],
+                "value": row["tipo"]
+            })
+
+        # Dificuldade (dropdown)
+        if row.get("dificuldade") and "dificuldade" in fields_def:
+            custom_fields.append({
+                "id": fields_def["dificuldade"]["id"],
+                "value": row["dificuldade"]
+            })
+
+        # Duração dias (number)
+        if row.get("duracao_dias") and "duracao_dias" in fields_def:
+            try:
+                custom_fields.append({
+                    "id": fields_def["duracao_dias"]["id"],
+                    "value": int(row["duracao_dias"])
+                })
+            except ValueError:
+                pass
+
+        # Grupo (text)
+        if row.get("grupo") and "grupo" in fields_def:
+            custom_fields.append({
+                "id": fields_def["grupo"]["id"],
+                "value": row["grupo"]
+            })
+
+        # Checkpoint (boolean/checkbox)
+        if is_checkpoint and "checkpoint" in fields_def:
+            custom_fields.append({
+                "id": fields_def["checkpoint"]["id"],
+                "value": True
+            })
+
+    if custom_fields:
+        payload["custom_fields"] = custom_fields
+
     # remove None
     payload = {k:v for k,v in payload.items() if v not in (None, "", [])}
+
+    if dry_run:
+        return {"id": "DRY_RUN", "url": f"https://app.clickup.com/{TEAM}/t/DRY_RUN"}
+
     res = post(f"{API}/list/{list_id}/task", payload)
     if not res or "id" not in res:
         print(f"[ERRO] Falha criando task '{name}' na lista {list_id}")
         return None
-    return res["id"]
+    return res
+
+def get_list_name(list_id):
+    """Busca o nome da lista pelo ID"""
+    try:
+        data = get(f"{API}/list/{list_id}")
+        return data.get("name", f"List {list_id}")
+    except:
+        return f"List {list_id}"
 
 def main():
-    if len(sys.argv) < 2:
-        print("Uso: python scripts/distribuidor_from_csv.py caminho/arquivo.csv")
+    dry_run = "--dry-run" in sys.argv
+
+    # Remover --dry-run da lista de argumentos
+    args = [a for a in sys.argv[1:] if a != "--dry-run"]
+
+    if len(args) < 1:
+        print("Uso: python scripts/distribuidor_from_csv.py caminho/arquivo.csv [--dry-run]")
         sys.exit(1)
-    csv_path = sys.argv[1]
+
+    csv_path = args[0]
     if not os.path.exists(csv_path):
         print("CSV não encontrado:", csv_path)
         sys.exit(1)
 
-    lists_map = load_map()
-    rows = read_csv(csv_path)
-    total = 0; ok = 0; skip = 0
+    print("=" * 60)
+    if dry_run:
+        print("🧪 MODO DRY-RUN - Nenhuma tarefa será criada")
+    else:
+        print("🚀 MODO PRODUÇÃO - Tarefas serão criadas no ClickUp")
+    print("=" * 60)
 
-    for raw in rows:
+    lists_map = load_map()
+
+    # Verificar se há listas não mapeadas
+    unmapped_areas = [k for k,v in lists_map.items() if v is None]
+    if unmapped_areas:
+        print("\n⚠️ ATENÇÃO: As seguintes áreas não estão mapeadas:")
+        for area in unmapped_areas:
+            print(f"  - {area}")
+        print("\nTarefas dessas áreas serão PULADAS.")
+        print(f"Edite {OVERRIDE_MAP} para corrigir o mapeamento.\n")
+
+    rows = read_csv(csv_path)
+    total = 0
+    ok = 0
+    skip = 0
+    created_tasks = []
+
+    print(f"\n📄 Processando {len(rows)} linhas do CSV...\n")
+
+    for idx, raw in enumerate(rows, 1):
         total += 1
         row = normalize_row(raw)
         area = norm_key(row.get("area_padrao",""))
+
+        # Checkpoint override
+        is_checkpoint = norm_key(row.get("checkpoint", "")) in ["sim", "true", "1", "x"]
+        if is_checkpoint and "checkpoints" in lists_map and lists_map["checkpoints"]:
+            area = "checkpoints"
+
         list_id = lists_map.get(area)
 
         if not list_id:
-            print(f"[SKIP] Linha {total}: área '{area}' sem mapeamento. Rode `make retrofit` e confira os nomes.")
+            if dry_run and idx <= 10:
+                print(f"❌ [{idx:3d}] SKIP: '{row.get('nome', '(sem nome)')[:40]}' → área '{area}' não mapeada")
+            if not dry_run:
+                print(f"[SKIP] Linha {total}: área '{area}' sem mapeamento.")
             skip += 1
             continue
 
-        ensure_tags(list_id)
-        tid = create_task(list_id, row)
-        if tid:
-            ok += 1
-        else:
-            skip += 1
-        time.sleep(0.15)  # evitar 429
+        # Dry-run: mostrar apenas primeiras 10 linhas
+        if dry_run and idx <= 10:
+            list_name = get_list_name(list_id)
+            task_name = row.get("nome", "(sem nome)")[:50]
+            print(f"✅ [{idx:3d}] '{task_name}' → Lista: '{list_name}' (ID: {list_id})")
 
-    print(f"\nResumo: total={total} criadas_ok={ok} puladas={skip}")
+        # Produção: criar tarefa real
+        if not dry_run:
+            task = create_task(list_id, row, dry_run=False)
+            if task:
+                ok += 1
+                created_tasks.append({
+                    "name": row.get("nome", "(sem nome)"),
+                    "url": task.get("url", f"https://app.clickup.com/{TEAM}/t/{task['id']}"),
+                    "area": area
+                })
+                if ok % 10 == 0:
+                    print(f"  ✓ {ok} tarefas criadas...")
+            else:
+                skip += 1
+            time.sleep(0.15)  # evitar 429
+
+    print("\n" + "=" * 60)
+    print("📊 RESUMO")
+    print("=" * 60)
+    print(f"Total de linhas: {total}")
+    if dry_run:
+        print(f"Tarefas que SERIAM criadas: {total - skip}")
+        print(f"Tarefas que seriam PULADAS: {skip}")
+        print("\n💡 Para criar as tarefas de verdade, rode sem --dry-run")
+    else:
+        print(f"Tarefas criadas com sucesso: {ok}")
+        print(f"Tarefas puladas/erro: {skip}")
+
+        if created_tasks:
+            print("\n🔗 EXEMPLOS DE TAREFAS CRIADAS:")
+            # Mostrar 5 tarefas de áreas diferentes
+            shown_areas = set()
+            shown = 0
+            for task in created_tasks:
+                if task["area"] not in shown_areas and shown < 5:
+                    print(f"  • [{task['area']}] {task['name']}")
+                    print(f"    {task['url']}")
+                    shown_areas.add(task["area"])
+                    shown += 1
+                if shown >= 5:
+                    break
+
+    print("=" * 60)
 
 if __name__ == "__main__":
     main()
