@@ -1,0 +1,59 @@
+{
+  "_comment": "Regras de sub-roteamento OPCIONAIS por palavra-chave no campo 'grupo' ou 'nome'",
+  "_instructions": [
+    "Use este arquivo para rotear tarefas de uma mesma área para listas diferentes",
+    "baseado em palavras-chave encontradas no campo 'grupo' (prioridade) ou 'nome' (fallback).",
+    "Se nenhuma regra bater, usa o default_list do lists_map.override.json"
+  ],
+  "_exemplo_de_uso": {
+    "infra_automacoes": {
+      "by_group_contains": [
+        {
+          "match": ["LP", "Landing Page", "landing"],
+          "list_id": "901234567893",
+          "description": "Tarefas com grupo contendo 'LP' vão para Landing Pages"
+        },
+        {
+          "match": ["manutencao", "manutenção", "update"],
+          "list_id": "901234567894",
+          "description": "Tarefas de manutenção"
+        }
+      ]
+    }
+  },
+  "rules": {
+    "infra_automacoes": {
+      "by_group_contains": [
+        {
+          "match": ["LP", "Landing Page", "landing"],
+          "list_id": "SUBSTITUIR_PELO_ID_DE_LANDING_PAGES",
+          "description": "Landing Pages"
+        },
+        {
+          "match": ["manutencao", "manutenção", "update", "atualização"],
+          "list_id": "SUBSTITUIR_PELO_ID_DE_MANUTENCAO",
+          "description": "Manutenção & Atualizações"
+        },
+        {
+          "match": ["dominio", "domínio", "DNS", "hospedagem"],
+          "list_id": "SUBSTITUIR_PELO_ID_DE_DOMINIOS",
+          "description": "Gestão de Domínios & Hospedagens"
+        },
+        {
+          "match": ["whatsapp", "zap", "wpp"],
+          "list_id": "SUBSTITUIR_PELO_ID_DE_WHATSAPPS",
+          "description": "WhatsApps"
+        }
+      ]
+    },
+    "trafego": {
+      "by_group_contains": [
+        {
+          "match": ["otimizacao", "otimização", "optimization"],
+          "list_id": "SUBSTITUIR_PELO_ID_DE_PROCESSO_OTIMIZACAO",
+          "description": "Processo de Otimização"
+        }
+      ]
+    }
+  }
+}

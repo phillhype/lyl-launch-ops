@@ -13,10 +13,10 @@ if not TOKEN or not TEAM:
     print("Erro: defina CLICKUP_TOKEN e CLICKUP_TEAM no .env")
     sys.exit(1)
 
-CACHE_MAP = os.path.join("scripts", ".cache_lists_map.json")
 OVERRIDE_MAP = os.path.join("scripts", "lists_map.override.json")
+ROUTING_RULES = os.path.join("scripts", "routing_rules.json")
 
-DATE_INPUT_FORMATS = ["%d/%m/%Y","%d/%m"]  # cai no ano atual se faltar ano
+DATE_INPUT_FORMATS = ["%d/%m/%Y","%d/%m"]
 YEAR_DEFAULT = int(os.getenv("LAUNCH_YEAR", datetime.now().year))
 
 def parse_date(s):
@@ -41,7 +41,6 @@ def post(url, payload):
         if r.status_code == 429:
             time.sleep(2)
             continue
-        # se campo inválido, não travar o lote
         print(f"[WARN] POST {url} status={r.status_code} body={r.text[:300]}")
         return None
     return None
@@ -59,23 +58,72 @@ def get(url, params=None):
     return None
 
 def load_map():
-    """Carrega mapeamento de áreas -> list_ids
-    Prioridade: override.json > cache.json
-    """
-    if os.path.exists(OVERRIDE_MAP):
-        print(f"📝 Usando mapeamento de: {OVERRIDE_MAP}")
-        with open(OVERRIDE_MAP, "r", encoding="utf-8") as f:
-            data = json.load(f)
-            return data.get("mapping", {})
-
-    if not os.path.exists(CACHE_MAP):
-        print("Erro: não encontrei", CACHE_MAP, "nem", OVERRIDE_MAP)
-        print("Rode `make retrofit` antes.")
+    """Carrega mapeamento de áreas -> list_ids do override.json"""
+    if not os.path.exists(OVERRIDE_MAP):
+        print(f"❌ Erro: {OVERRIDE_MAP} não encontrado!")
+        print("\nPara usar este script, você precisa:")
+        print(f"1. Criar {OVERRIDE_MAP} com os List IDs das suas listas")
+        print("2. Abrir cada lista no ClickUp e copiar o ID da URL")
+        print("3. Preencher o arquivo com os IDs corretos")
+        print("\nVeja SETUP.md para instruções detalhadas.")
         sys.exit(1)
 
-    print(f"💾 Usando mapeamento de: {CACHE_MAP}")
-    with open(CACHE_MAP, "r", encoding="utf-8") as f:
-        return json.load(f)["lists"]
+    with open(OVERRIDE_MAP, "r", encoding="utf-8") as f:
+        data = json.load(f)
+        mapping = data.get("mapping", {})
+
+    # Validar que não tem placeholders
+    invalid = {k: v for k, v in mapping.items() if isinstance(v, str) and "SUBSTITUIR" in v.upper()}
+    if invalid:
+        print(f"❌ Erro: {OVERRIDE_MAP} contém placeholders não preenchidos:")
+        for area, placeholder in invalid.items():
+            print(f"  - {area}: {placeholder}")
+        print("\nSubstitua os placeholders pelos List IDs reais.")
+        sys.exit(1)
+
+    return mapping
+
+def load_routing_rules():
+    """Carrega regras de roteamento opcionais"""
+    if not os.path.exists(ROUTING_RULES):
+        return {}
+
+    with open(ROUTING_RULES, "r", encoding="utf-8") as f:
+        data = json.load(f)
+        return data.get("rules", {})
+
+def normalize_text(s):
+    """Normaliza texto para comparação (remove acentos, lowercase)"""
+    import unicodedata
+    s = unicodedata.normalize('NFD', s)
+    s = ''.join(c for c in s if unicodedata.category(c) != 'Mn')
+    return s.strip().lower()
+
+def apply_routing_rules(area, row, routing_rules, default_list_id):
+    """Aplica regras de sub-roteamento baseado em palavra-chave"""
+    if area not in routing_rules:
+        return default_list_id
+
+    rules = routing_rules[area].get("by_group_contains", [])
+
+    # Prioridade 1: campo 'grupo'
+    grupo = normalize_text(row.get("grupo", ""))
+    if grupo:
+        for rule in rules:
+            for keyword in rule.get("match", []):
+                if normalize_text(keyword) in grupo:
+                    return rule["list_id"]
+
+    # Prioridade 2: campo 'nome' (fallback)
+    nome = normalize_text(row.get("nome", ""))
+    if nome:
+        for rule in rules:
+            for keyword in rule.get("match", []):
+                if normalize_text(keyword) in nome:
+                    return rule["list_id"]
+
+    # Se nenhuma regra bateu, usa default
+    return default_list_id
 
 def norm_key(s):
     return (s or "").strip().lower()
@@ -86,7 +134,7 @@ def read_csv(path):
         rows = [ {k.strip(): (v or "").strip() for k,v in row.items()} for row in reader ]
     return rows
 
-# tentativa de normalização de chaves
+# Mapeamento de colunas do CSV
 KEYS_MAP = {
     "nome": "nome",
     "task": "nome",
@@ -141,7 +189,7 @@ def create_task(list_id, row, dry_run=False):
     }
     prio = priority_map.get(norm_key(row.get("prioridade","")), None)
 
-    # Detectar checkpoint
+    # Detectar checkpoint (mas NÃO rotear para lista separada)
     is_checkpoint = norm_key(row.get("checkpoint", "")) in ["sim", "true", "1", "x"]
 
     payload = {
@@ -155,7 +203,7 @@ def create_task(list_id, row, dry_run=False):
         "tags": [expert_tag] if expert_tag else []
     }
 
-    # Custom fields (sprint, fase, tipo, dificuldade, duracao_dias, grupo)
+    # Custom fields (sprint, fase, tipo, dificuldade, duracao_dias, grupo, checkpoint)
     custom_fields = []
 
     # Buscar custom fields da lista (só se não for dry-run)
@@ -207,7 +255,7 @@ def create_task(list_id, row, dry_run=False):
                 "value": row["grupo"]
             })
 
-        # Checkpoint (boolean/checkbox)
+        # Checkpoint (boolean/checkbox) - marcar campo, mas MANTER na lista da área
         if is_checkpoint and "checkpoint" in fields_def:
             custom_fields.append({
                 "id": fields_def["checkpoint"]["id"],
@@ -252,16 +300,22 @@ def main():
         print("CSV não encontrado:", csv_path)
         sys.exit(1)
 
-    print("=" * 60)
+    print("=" * 70)
     if dry_run:
         print("🧪 MODO DRY-RUN - Nenhuma tarefa será criada")
     else:
         print("🚀 MODO PRODUÇÃO - Tarefas serão criadas no ClickUp")
-    print("=" * 60)
+    print("=" * 70)
 
     lists_map = load_map()
+    routing_rules = load_routing_rules()
 
-    # Verificar se há listas não mapeadas
+    if routing_rules:
+        print(f"📍 Regras de roteamento carregadas de: {ROUTING_RULES}")
+    else:
+        print(f"📝 Usando mapeamento de: {OVERRIDE_MAP}")
+
+    # Verificar se há áreas não mapeadas
     unmapped_areas = [k for k,v in lists_map.items() if v is None]
     if unmapped_areas:
         print("\n⚠️ ATENÇÃO: As seguintes áreas não estão mapeadas:")
@@ -283,14 +337,10 @@ def main():
         row = normalize_row(raw)
         area = norm_key(row.get("area_padrao",""))
 
-        # Checkpoint override
-        is_checkpoint = norm_key(row.get("checkpoint", "")) in ["sim", "true", "1", "x"]
-        if is_checkpoint and "checkpoints" in lists_map and lists_map["checkpoints"]:
-            area = "checkpoints"
+        # Obter list_id base da área
+        base_list_id = lists_map.get(area)
 
-        list_id = lists_map.get(area)
-
-        if not list_id:
+        if not base_list_id:
             if dry_run and idx <= 10:
                 print(f"❌ [{idx:3d}] SKIP: '{row.get('nome', '(sem nome)')[:40]}' → área '{area}' não mapeada")
             if not dry_run:
@@ -298,15 +348,21 @@ def main():
             skip += 1
             continue
 
+        # Aplicar regras de roteamento (se existirem)
+        final_list_id = apply_routing_rules(area, row, routing_rules, base_list_id)
+
         # Dry-run: mostrar apenas primeiras 10 linhas
         if dry_run and idx <= 10:
-            list_name = get_list_name(list_id)
             task_name = row.get("nome", "(sem nome)")[:50]
-            print(f"✅ [{idx:3d}] '{task_name}' → Lista: '{list_name}' (ID: {list_id})")
+            checkpoint_flag = " [CHECKPOINT]" if norm_key(row.get("checkpoint", "")) in ["sim", "true", "1", "x"] else ""
+            routing_info = ""
+            if final_list_id != base_list_id:
+                routing_info = f" (roteado por regra)"
+            print(f"[OK] {task_name}{checkpoint_flag} -> {area} -> {final_list_id}{routing_info}")
 
         # Produção: criar tarefa real
         if not dry_run:
-            task = create_task(list_id, row, dry_run=False)
+            task = create_task(final_list_id, row, dry_run=False)
             if task:
                 ok += 1
                 created_tasks.append({
@@ -320,9 +376,9 @@ def main():
                 skip += 1
             time.sleep(0.15)  # evitar 429
 
-    print("\n" + "=" * 60)
+    print("\n" + "=" * 70)
     print("📊 RESUMO")
-    print("=" * 60)
+    print("=" * 70)
     print(f"Total de linhas: {total}")
     if dry_run:
         print(f"Tarefas que SERIAM criadas: {total - skip}")
@@ -346,7 +402,7 @@ def main():
                 if shown >= 5:
                     break
 
-    print("=" * 60)
+    print("=" * 70)
 
 if __name__ == "__main__":
     main()
