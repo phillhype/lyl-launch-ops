@@ -1,0 +1,24 @@
+{
+  "_comment": "Mapeamento manual de áreas para List IDs EXISTENTES no Space 'Operação LYL'",
+  "_instructions": [
+    "1. Abra cada lista no ClickUp web",
+    "2. Copie o List ID da URL: https://app.clickup.com/9013265478/v/li/XXXXXXXXX",
+    "3. Cole abaixo substituindo os placeholders",
+    "4. Remova áreas que não existem no seu workspace"
+  ],
+  "mapping": {
+    "projetos": "SUBSTITUIR_PELO_ID_DE_PLANEJAMENTOS_E_CRONOGRAMAS",
+    "estrategia": "SUBSTITUIR_PELO_ID_DE_ESTRATEGIAS_E_FUNIS",
+    "copy": "SUBSTITUIR_PELO_ID_DE_PROCESSO_DE_COPYWRITING",
+    "social_media": "SUBSTITUIR_PELO_ID_DE_AGENDAMENTOS_E_PUBLICACOES",
+    "design": "SUBSTITUIR_PELO_ID_DE_DESIGN_E_CRIACAO",
+    "edicao_de_videos": "SUBSTITUIR_PELO_ID_DE_GRAVACAO_E_EDICAO",
+    "trafego": "SUBSTITUIR_PELO_ID_DE_GESTAO_DE_CAMPANHAS",
+    "infra_automacoes": "SUBSTITUIR_PELO_ID_DE_GESTAO_DE_FLUXOS_OU_AUTOMACOES"
+  },
+  "_exemplo": {
+    "projetos": "901234567890",
+    "estrategia": "901234567891",
+    "copy": "901234567892"
+  }
+}

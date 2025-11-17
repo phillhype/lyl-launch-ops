@@ -8,6 +8,7 @@ load_dotenv()
 API = "https://api.clickup.com/api/v2"
 TOKEN = os.getenv("CLICKUP_TOKEN")
 TEAM  = os.getenv("CLICKUP_TEAM")
+SPACE_ID = os.getenv("CLICKUP_SPACE_ID")  # Opcional: se definido, pula busca por nome
 
 if not TOKEN or not TEAM:
     print("Erro: defina CLICKUP_TOKEN e CLICKUP_TEAM no .env")
@@ -15,12 +16,25 @@ if not TOKEN or not TEAM:
 
 HEAD = {"Authorization": TOKEN, "Content-Type": "application/json"}
 
-AREAS_CANON = [
-    "projetos","estrategia","copy","social_media","design","edicao_de_videos",
-    "trafego","infra_automacoes","comercial","suporte","checkpoints"
-]
+# Mapeamento de áreas canônicas para nomes conhecidos das listas antigas
+AREA_SYNONYMS = {
+    "projetos": ["Planejamentos & Cronogramas", "Planejamentos", "Cronogramas", "Projetos"],
+    "estrategia": ["Estratégias & Funis", "Estrategias", "Funis", "Estratégia"],
+    "copy": ["Processo de Copywriting", "Copywriting", "Copy"],
+    "social_media": ["Agendamentos & Publicações", "Agendamentos", "Publicações", "Social Media", "Social"],
+    "design": ["Design & Criação", "Design", "Criação", "Criacao"],
+    "edicao_de_videos": ["Gravação & Edição", "Gravacao", "Edicao", "Edição", "Videos", "Vídeos"],
+    "trafego": ["Gestão de Campanhas", "Campanhas", "Tráfego", "Trafego", "Ads", "Performance"],
+    "infra_automacoes": ["Processos de Automações", "Automacoes", "Automações", "Desenvolvimento Web", "Landing Page", "Manutenção & Atualizações"],
+    "comercial": ["Comercial", "Vendas"],
+    "suporte": ["Suporte", "Atendimento"],
+    "checkpoints": ["checkpoints", "Checkpoints", "Check-points"]
+}
+
+AREAS_CANON = list(AREA_SYNONYMS.keys())
 
 CACHE_PATH = os.path.join("scripts", ".cache_lists_map.json")
+OVERRIDE_PATH = os.path.join("scripts", "lists_map.override.json")
 
 def get(url, params=None):
     for _ in range(5):
@@ -46,53 +60,176 @@ def collect_lists_in_space(space_id):
     # listas no root do space
     try:
         data = get(f"{API}/space/{space_id}/list")
-        lists += data.get("lists", [])
-    except Exception:
-        pass
+        root_lists = data.get("lists", [])
+        lists += root_lists
+        print(f"  → Listas no root do Space: {len(root_lists)}")
+        for lst in root_lists:
+            print(f"     • '{lst['name']}' (ID: {lst['id']})")
+    except Exception as e:
+        print(f"  ⚠️ Erro ao buscar listas no root: {e}")
 
     # listas dentro de pastas
     try:
         fd = get(f"{API}/space/{space_id}/folder")
-        for folder in fd.get("folders", []):
+        folders = fd.get("folders", [])
+        print(f"  → Pastas encontradas: {len(folders)}")
+        for folder in folders:
+            print(f"     • Pasta: '{folder['name']}' (ID: {folder['id']})")
             ld = get(f"{API}/folder/{folder['id']}/list")
-            lists += ld.get("lists", [])
-    except Exception:
-        pass
+            folder_lists = ld.get("lists", [])
+            print(f"       - Listas na pasta: {len(folder_lists)}")
+            for lst in folder_lists:
+                print(f"         ◦ '{lst['name']}' (ID: {lst['id']})")
+            lists += folder_lists
+    except Exception as e:
+        print(f"  ⚠️ Erro ao buscar pastas/listas: {e}")
     return lists
 
 def normalize_name(n):
+    """Normaliza nome removendo acentos, pontuação e convertendo para lowercase"""
+    import unicodedata
+    n = unicodedata.normalize('NFD', n)
+    n = ''.join(c for c in n if unicodedata.category(c) != 'Mn')
     n = n.strip().lower()
-    n = re.sub(r"[^\w]+", "_", n)
+    n = re.sub(r"[^\w\s]+", " ", n)
+    n = re.sub(r"\s+", " ", n).strip()
     return n
 
+def fuzzy_match(list_name, synonyms):
+    """Verifica se o nome da lista corresponde a algum sinônimo"""
+    norm_list = normalize_name(list_name)
+    for syn in synonyms:
+        norm_syn = normalize_name(syn)
+        # Match exato
+        if norm_list == norm_syn:
+            return True
+        # Match parcial (contém)
+        if norm_syn in norm_list or norm_list in norm_syn:
+            return True
+    return False
+
+def auto_map_lists(all_lists):
+    """Mapeia automaticamente listas para áreas usando sinônimos"""
+    mapping = {area: None for area in AREAS_CANON}
+    mapping_details = {area: {"list_id": None, "list_name": None, "matched_synonym": None} for area in AREAS_CANON}
+
+    # Criar um dicionário de listas já mapeadas para evitar duplicatas
+    used_lists = set()
+
+    for area, synonyms in AREA_SYNONYMS.items():
+        for lst in all_lists:
+            if lst['id'] in used_lists:
+                continue
+            if fuzzy_match(lst['name'], synonyms):
+                mapping[area] = lst['id']
+                mapping_details[area] = {
+                    "list_id": lst['id'],
+                    "list_name": lst['name'],
+                    "matched_synonym": "auto-matched"
+                }
+                used_lists.add(lst['id'])
+                break
+
+    return mapping, mapping_details
+
 def main():
-    op_space = find_space_id_by_name(TEAM, "Operação LYL")
-    if not op_space:
-        print("❌ Space 'Operação LYL' não encontrado. Crie-o antes.")
+    print("=" * 60)
+    print("🔄 RETROFIT - Mapeamento de Listas EXISTENTES")
+    print("=" * 60)
+
+    # Usar SPACE_ID do .env se fornecido, senão buscar por nome
+    if SPACE_ID:
+        print(f"✅ Usando Space ID do .env: {SPACE_ID}")
+        op_space = SPACE_ID
+    else:
+        print("🔍 Buscando Space 'Operação LYL' pelo nome...")
+        op_space = find_space_id_by_name(TEAM, "Operação LYL")
+        if not op_space:
+            print("❌ Space 'Operação LYL' não encontrado.")
+            sys.exit(1)
+        print(f"✅ Space encontrado: {op_space}")
+
+    print("\n📂 Coletando listas do Space...")
+    all_lists = collect_lists_in_space(op_space)
+
+    if not all_lists:
+        print("\n⚠️ NENHUMA lista encontrada no Space!")
+        print("Possíveis causas:")
+        print("  1. Token sem permissão para ler listas/folders")
+        print("  2. Space vazio")
+        print("  3. Space ID incorreto")
+        print("\nPróximos passos:")
+        print("  - Crie um novo token com permissões: View Spaces, View Folders, View Lists")
+        print("  - OU forneça os List IDs manualmente em lists_map.override.json")
         sys.exit(1)
 
-    all_lists = collect_lists_in_space(op_space)
-    by_norm = { normalize_name(l["name"]): l for l in all_lists }
+    print(f"\n📋 Total de listas encontradas: {len(all_lists)}")
 
-    wanted = {a: None for a in AREAS_CANON}
-    for key in by_norm:
-        if key in wanted:
-            wanted[key] = by_norm[key]["id"]
+    # Auto-mapeamento
+    print("\n🤖 Realizando mapeamento automático com sinônimos...")
+    mapping, mapping_details = auto_map_lists(all_lists)
 
-    print("🔎 Detecção de listas no Space 'Operação LYL':")
-    for area, lid in wanted.items():
-        print(f"  - {area}: {'OK ' + lid if lid else 'NÃO ENCONTRADA'}")
+    # Mostrar resultado do mapeamento
+    print("\n" + "=" * 60)
+    print("📊 RESULTADO DO MAPEAMENTO")
+    print("=" * 60)
 
-    # salva cache
+    mapped = []
+    unmapped = []
+
+    for area in AREAS_CANON:
+        details = mapping_details[area]
+        if details['list_id']:
+            mapped.append(area)
+            print(f"✅ {area:20} → '{details['list_name']}' (ID: {details['list_id']})")
+        else:
+            unmapped.append(area)
+            print(f"❌ {area:20} → NÃO MAPEADA")
+
+    # Salvar cache
+    cache_data = {
+        "space_id": op_space,
+        "generated_at": datetime.now().isoformat(),
+        "lists": mapping,
+        "details": mapping_details,
+        "all_lists_found": [{"id": l['id'], "name": l['name']} for l in all_lists]
+    }
+
     with open(CACHE_PATH, "w", encoding="utf-8") as f:
-        json.dump({"space_id": op_space, "lists": wanted}, f, ensure_ascii=False, indent=2)
+        json.dump(cache_data, f, ensure_ascii=False, indent=2)
+    print(f"\n💾 Cache salvo em: {CACHE_PATH}")
 
-    faltando = [a for a, lid in wanted.items() if lid is None]
-    if faltando:
-        print("\n⚠️ Listas NÃO encontradas (use nomes exatos). Crie-as manualmente OU ajuste os nomes para corresponder:")
-        print("   " + ", ".join(faltando))
+    # Gerar override se necessário
+    if unmapped:
+        print("\n" + "=" * 60)
+        print("⚠️ LISTAS NÃO MAPEADAS")
+        print("=" * 60)
+        print(f"As seguintes áreas não foram mapeadas automaticamente:")
+        for area in unmapped:
+            print(f"  - {area}")
+            print(f"    Sinônimos esperados: {', '.join(AREA_SYNONYMS[area])}")
+
+        # Gerar arquivo de override
+        override_data = {
+            "_comment": "Edite este arquivo para mapear manualmente áreas para List IDs",
+            "_instructions": "Substitua null pelo List ID correto (número)",
+            "_available_lists": [{"id": l['id'], "name": l['name']} for l in all_lists],
+            "mapping": {area: mapping[area] for area in AREAS_CANON}
+        }
+
+        with open(OVERRIDE_PATH, "w", encoding="utf-8") as f:
+            json.dump(override_data, f, ensure_ascii=False, indent=2)
+
+        print(f"\n📝 Arquivo de override gerado: {OVERRIDE_PATH}")
+        print("Edite este arquivo para corrigir mapeamentos manualmente.")
+        print("Após editar, rode novamente 'make distribute' (ele usará o override).")
     else:
-        print("\n✅ Mapeamento concluído e salvo em", CACHE_PATH)
+        print("\n" + "=" * 60)
+        print("✅ SUCESSO - Todas as áreas foram mapeadas!")
+        print("=" * 60)
+        print("Próximo passo: rodar 'make distribute CSV=/caminho/arquivo.csv --dry-run'")
+
+    print("\n" + "=" * 60)
 
 if __name__ == "__main__":
     main()

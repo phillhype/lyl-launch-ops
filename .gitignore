@@ -7,6 +7,11 @@ __pycache__/
 .env
 *.env
 
+# Cache e configurações locais
+scripts/.cache_*.json
+scripts/lists_map.override.json
+scripts/routing_rules.json
+
 # macOS
 .DS_Store
 
