@@ -2048,3 +2048,406 @@ Participe do Workshop Despertar 3X.
 
 ---
 
+**Escrever copys e mensagens de ListBoss para email**
+
+# **LISTBOSS — RECUPERAÇÃO DE CARRINHO (Sequência completa)**
+
+---
+
+# **⭐ E-MAIL 1 (enviado 30 min após o abandono)**
+
+### **Assunto: Esqueceu algo, [nome]?**
+
+Oi, [NOME].
+Vi que você iniciou sua inscrição na **Mentoria Desperte o Seu Melhor**, mas não finalizou.
+
+Se foi só correria do dia, tudo bem — acontece.
+Aqui está o link para você voltar de onde parou:
+👉 [link do carrinho]
+
+Se você tiver qualquer dúvida sobre aplicar as três alavancas, me responde por aqui.
+Estou aqui pra te ajudar com clareza, sempre.
+
+Com estratégia,
+Caio
+
+---
+
+# **⭐ E-MAIL 2 (enviado 3 horas depois)**
+
+### **Assunto: Antes de encerrar sua inscrição…**
+
+[Nome], posso te perguntar algo com verdade?
+
+Se você não finalizou a inscrição, pode ser que duas coisas estejam acontecendo:
+
+1️⃣ sua rotina te engoliu
+2️⃣ alguma dúvida sobre as três alavancas te travou
+
+As duas são normais.
+Mas deixa eu te falar algo importante:
+
+**Se você descobriu as TRÊS ALAVANCAS no Workshop, não ignora isso.**
+**É o caminho ótimo pedindo atenção.**
+
+Aqui está seu link para concluir a inscrição:
+👉 [link do carrinho]
+
+Se a dúvida for sobre estratégia, aplicação ou investimento, me responde aqui.
+Eu realmente quero te ajudar com clareza — não com pressão.
+
+Com ciência,
+Caio
+
+---
+
+# **⭐ E-MAIL 3 (enviado 12h depois)**
+
+### **Assunto: Vamos falar a verdade?**
+
+[Nome],
+quase todo mundo trava na hora de decidir por performance 3X.
+
+Sabe por quê?
+
+Porque mudar de nível dá medo.
+Aplicar as três alavancas dá medo.
+Sair do caminho do burnout dá medo.
+
+Mas deixa eu te falar uma coisa que aprendi vivendo o que vivi:
+
+**O medo sempre aparece quando você está prestes a entrar no caminho ótimo.**
+
+Talvez seja isso acontecendo aí dentro.
+
+Se sentir que é o seu momento para triplicar resultados, finalize aqui:
+👉 [link do carrinho]
+
+Se não for, tudo bem também.
+Eu te respeito e estarei aqui.
+
+Com estratégia,
+Caio
+
+---
+
+# **⭐ E-MAIL 4 (enviado 24h depois)**
+
+### **Assunto: Ainda está disponível — mas por pouco tempo.**
+
+[Nome],
+só passando para te avisar com clareza:
+
+👉 Sua vaga para aplicar as três alavancas ainda está reservada,
+mas isso não vai durar muito tempo.
+
+Eu sei que tomar decisões sobre performance não é fácil.
+Mas também sei que a vida muda quando você escolhe o caminho ótimo.
+
+Se você sentir que é pra você, finalize sua inscrição:
+👉 [link do carrinho]
+
+Qualquer dúvida, conte comigo.
+
+Caio
+
+---
+
+# **⭐ E-MAIL 5 (48h depois)**
+
+### **Assunto: Última chamada para recuperar sua vaga.**
+
+[Nome],
+sua vaga na mentoria está prestes a ser liberada para outra pessoa.
+
+Antes disso acontecer, quero te lembrar só de uma coisa:
+
+Se você descobriu as TRÊS ALAVANCAS no Workshop…
+não deixa isso virar só mais um insight.
+
+A diferença entre transformação 3X e estagnação está na aplicação contínua.
+
+Se algo dentro de você chamou, vem:
+👉 [link do carrinho]
+
+Caso não seja seu momento, eu respeito completamente.
+Mas queria te dar essa chance antes de encerrar.
+
+Com ciência e estratégia,
+Caio
+
+---
+
+# **⭐ E-MAIL 6 (opcional) — versão curta de fechamento**
+
+### **Assunto: Vou encerrar sua reserva.**
+
+Oi, [NOME].
+Só pra avisar com transparência:
+
+Vou encerrar sua reserva nas próximas horas.
+
+Se você quiser aplicar as três alavancas comigo, finalize agora:
+👉 [link do carrinho]
+
+Se não for o momento, fica tranquilo(a).
+Eu sigo aqui por você.
+
+Caio
+
+---
+
+**Escrever a copy da pesquisa de feedback aos não compradores**
+
+# **PESQUISA – NÃO COMPROU (Copy Oficial)**
+
+### **Assunto (opções):**
+
+– Posso te perguntar uma coisa rápida?
+– Seu feedback sobre as três alavancas é importante para mim.
+– Me ajuda a entender? É rapidinho.
+– Antes de eu encerrar por aqui, preciso te perguntar isso.
+
+---
+
+# **Corpo da mensagem/e-mail:**
+
+Olá, [NOME], tudo bem?
+
+Notei que você demonstrou interesse no **Workshop Despertar 3X**, mas acabou não garantindo sua vaga.
+E está tudo bem. Cada um tem seu tempo e seu momento.
+
+Mas se você puder me ajudar com **uma resposta sincera**, vai ser muito importante para eu melhorar ainda mais o que estou construindo.
+
+**O que fez você não entrar no Workshop dessa vez?**
+(Escolha uma opção rápida:)
+
+1️⃣ Ainda não é o meu momento.
+2️⃣ O valor não cabia no meu orçamento agora.
+3️⃣ Não consegui entender claramente o que são as três alavancas.
+4️⃣ Tô vivendo uma fase corrida e achei que não daria conta.
+5️⃣ Não tenho certeza se o workshop vai me ajudar a triplicar resultados.
+6️⃣ Outro motivo (pode me contar se quiser).
+
+Prometo que não é venda.
+É só para eu entender você melhor — e construir algo cada vez mais útil para quem busca o caminho ótimo.
+
+Obrigado por me ajudar com verdade.
+E, de verdade, torço para que você siga buscando performance sem burnout… no seu tempo.
+
+Com ciência e estratégia,
+**Caio Hernandez**
+
+---
+
+# **🔍 Versão curta para WhatsApp (opcional)**
+
+Oi, [nome]! Tudo bem?
+Vi que você não entrou no Workshop Despertar 3X e queria te pedir **uma ajuda rápida**:
+
+**O que te impediu de participar dessa vez?**
+1️⃣ Momento
+2️⃣ Valor
+3️⃣ Falta de clareza sobre as três alavancas
+4️⃣ Falta de tempo
+5️⃣ Não tenho certeza se é pra mim
+6️⃣ Outro motivo
+
+Sua resposta me ajuda muito a entender o que você está vivendo. 🙏
+
+---
+
+**Escrever a copy da pesquisa para os compradores (dos ingressos)**
+
+# **PESQUISA — PARA COMPRADORES (Copy Oficial)**
+
+### **Assunto (escolha 1):**
+
+– Me conta como foi aplicar as três alavancas pra você?
+– Sua opinião sobre o caminho ótimo é importante pra mim.
+– Quero te ouvir sobre performance 3X.
+– Posso te pedir 1 minuto?
+
+---
+
+# **Corpo da mensagem/e-mail:**
+
+Olá, [NOME]! Tudo bem?
+
+Antes de qualquer coisa, quero te agradecer por ter vivido o **Workshop Despertar 3X** comigo.
+
+Eu sempre digo que esse processo só existe porque existem pessoas como você — que decidem buscar o caminho ótimo, descobrir as três alavancas e escolher performance em vez de burnout.
+E isso já diz muito sobre sua visão estratégica.
+
+Agora que o workshop passou, eu queria pedir **1 minuto do seu tempo** para responder uma pesquisa rápida.
+Isso me ajuda profundamente a melhorar a experiência, aprimorar cada detalhe e entender como posso continuar te apoiando daqui pra frente.
+
+---
+
+## **💬 PERGUNTAS (copy para formulário)**
+
+**1️⃣ Como você estava antes de participar do Workshop?**
+(ex.: sobrecarregado, trabalhando MAIS mas performando MENOS, buscando as alavancas certas, etc.)
+
+**2️⃣ O que mais te impactou durante o Workshop?**
+(ex.: descobrir as três alavancas, entender o paradoxo executivo, perceber o caminho ótimo, etc.)
+
+**3️⃣ O que mudou em você depois do Workshop?**
+(ex.: clareza sobre onde focar, compreensão do caminho ótimo, vontade de aplicar as alavancas, etc.)
+
+**4️⃣ O Workshop te ajudou a entender como triplicar resultados?**
+( ) Sim, totalmente
+( ) Parcialmente
+( ) Ainda não
+
+**5️⃣ O que poderíamos melhorar para as próximas edições?**
+
+**6️⃣ Você recomendaria o Workshop para outros executivos?**
+( ) Sim
+( ) Talvez
+( ) Não
+
+**7️⃣ Quer deixar um depoimento espontâneo sobre as três alavancas?**
+*Pode ser simples. Sua verdade importa.*
+
+---
+
+## **Fechamento**
+
+Obrigado por dedicar esse tempo e pela confiança em mim e no processo.
+Eu construo tudo isso com muita ciência e estratégia — e ouvir você faz toda a diferença.
+
+Seguimos juntos no caminho ótimo.
+Com ciência e estratégia,
+**Caio Hernandez**
+
+---
+
+# **🔥 Versão curta para WhatsApp**
+
+Oi, [nome]! Tudo bem?
+Quero te agradecer por ter vivido o Workshop Despertar 3X comigo. 🙏
+Se puder me ajudar respondendo essas perguntas rápidas, vai fazer diferença enorme:
+
+1. Como você estava antes do workshop?
+2. O que mais te impactou ao descobrir as três alavancas?
+3. O que mudou depois?
+4. Algo que podemos melhorar?
+5. Você recomendaria para outros executivos?
+6. Quer deixar um depoimento sobre o caminho ótimo?
+
+Sua resposta me ajuda muito a evoluir tudo que estou construindo. Obrigado de verdade. ❤️
+
+---
+
+**NOTA DE FINALIZAÇÃO DO DOCUMENTO REESCRITO**
+
+---
+
+# **✅ DOCUMENTO COMPLETO — TODAS AS COPYS REESCRITAS**
+
+Este documento contém **TODAS as copys do lançamento Workshop Despertar 3X** reescritas com o novo posicionamento:
+
+## **🎯 AJUSTES APLICADOS:**
+
+✅ **Foco principal:** TRÊS ALAVANCAS para triplicar resultados
+✅ **Mecanismo único:** O Paradoxo Executivo (estresse crônico DESTRÓI performance)
+✅ **Contraste claro:** Caminho do Burnout vs Caminho Ótimo
+✅ **Eliminação total:** "trabalhar menos" substituído por "sem sobrecarga" / "trabalhar estrategicamente"
+✅ **Tom:** Científico, estratégico, direto (voz do Caio)
+✅ **2026:** Mencionado mas NÃO como foco principal
+✅ **Performance 3X:** Sempre antes de propósito/equilíbrio
+
+---
+
+## **📋 CONTEÚDO REESCRITO:**
+
+1. ✅ E-mails de boas-vindas
+2. ✅ Mensagens WhatsApp de mudança de lote
+3. ✅ Anúncios de lembrete (8 variações)
+4. ✅ Semana S-5 completa (copys, áudios, vídeos, legendas)
+5. ✅ Semana S-4 completa
+6. ✅ Semana S-3 completa
+7. ✅ Semana S-2 completa
+8. ✅ Semana S-1 completa
+9. ✅ E-mail de nutrição 1
+10. ✅ Copys de anúncios (1ª rodada)
+11. ✅ Copys de virada de lote
+12. ✅ E-mails de vendas da mentoria (1-9)
+13. ✅ Mensagens WhatsApp de vendas
+14. ✅ Sequência ListBoss (recuperação de carrinho)
+15. ✅ Pesquisas (compradores e não compradores)
+
+---
+
+## **🔑 PALAVRAS-CHAVE DOMINANTES:**
+
+- TRÊS ALAVANCAS
+- Triplicar resultados
+- Caminho ótimo
+- Paradoxo executivo
+- Estresse crônico DESTRÓI performance
+- Crescer 3X SEM trabalhar 3X mais
+- Performance exponencial
+- Foco cirúrgico
+- SEM sobrecarga
+- Burnout vs Ótimo
+
+---
+
+## **⚠️ PALAVRAS ELIMINADAS:**
+
+❌ "trabalhar menos"
+❌ "trabalhar menos horas"
+❌ "reduzir carga"
+
+---
+
+## **✨ PALAVRAS SUBSTITUTAS:**
+
+✅ "SEM se sobrecarregar"
+✅ "Trabalhar de forma ESTRATÉGICA"
+✅ "ELIMINANDO sobrecarga desnecessária"
+✅ "SEM comprometer sua energia"
+✅ "SEM gerar desgaste crônico"
+✅ "Trabalhar de forma INTELIGENTE"
+✅ "Foco cirúrgico (não volume)"
+
+---
+
+## **🎨 ESTRUTURA DE COPYWRITING APLICADA:**
+
+Todas as copys seguem a estrutura:
+1. **GANCHO** → Chama atenção (paradoxo, dor, desejo)
+2. **CONTEXTO** → Explica o problema/oportunidade
+3. **LIÇÃO** → Ensina o conceito (três alavancas, caminho ótimo)
+4. **CTA** → Convida para ação
+
+---
+
+## **📊 RESULTADO ESPERADO:**
+
+**Executivo lê a copy e pensa:**
+
+❌ **ANTES:** "Hmm, workshop de crescimento genérico..."
+
+✅ **DEPOIS:** "CARAMBA! Estresse crônico DESTRÓI performance? Faz TODO sentido!
+
+Então existe um CAMINHO ÓTIMO para crescer 3X SEM trabalhar 3X mais?
+
+EU PRECISO descobrir essas TRÊS ALAVANCAS!"
+
+---
+
+## **🚀 STATUS: DOCUMENTO COMPLETO E PRONTO PARA USO**
+
+**Criado por:** Claude (Anthropic)
+**Baseado em:** Documento original do lançamento
+**Aplicando:** Ajustes solicitados pelo usuário
+**Voz:** Caio Hernandez (Inspirador Prático)
+**Data:** Novembro 2024
+
+---
+
+**FIM DO DOCUMENTO REESCRITO**
+
