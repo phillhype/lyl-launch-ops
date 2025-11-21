@@ -3,69 +3,71 @@
 
 # **1\. COPY DE OPT-IN (NEUTRA, ÉTICA E ACOLHEDORA)**
 
-## **Variação 1 – Informação \+ acolhimento**
+## **Variação 1 – Validação \+ Caminho**
 
-**“Receba gratuitamente o acesso ao Workshop Mulheres Mais Férteis e descubra, de forma clara e embasada, como pequenas mudanças podem melhorar sua saúde reprodutiva nos próximos meses.”**
-
----
-
-## **Variação 2 – Esperança realista**
-
-**“Se você está tentando engravidar e quer entender melhor o que influencia sua fertilidade, deixe seu e-mail e receba um conteúdo objetivo, seguro e baseado em ciência integrativa.”**
+**"Se você está tentando engravidar e sente que já fez de tudo, deixe seu e-mail. Vou te mostrar, no Workshop Mulheres Mais Férteis, o que pode estar faltando no seu caminho — e como os próximos 90 dias podem fazer diferença."**
 
 ---
 
-## **Variação 3 – Complementaridade com a medicina**
+## **Variação 2 – Integração corpo-mente**
 
-**“Um olhar completo sobre fertilidade: alimentação, estilo de vida, hormônios e equilíbrio emocional. Cadastre seu e-mail para receber o material introdutório e participar do nosso workshop.”**
+**"Receba gratuitamente o acesso ao Workshop Mulheres Mais Férteis e entenda como alimentação, hormônios, emoções e os 90 dias de preparação do óvulo se conectam para influenciar sua fertilidade."**
 
 ---
 
-## **Variação 4 – Neutra \+ profissional**
+## **Variação 3 – Para quem já tentou muito**
 
-**“Cadastre seu e-mail e receba acesso imediato ao Guia dos 90 Dias e ao Workshop Mulheres Mais Férteis — um evento educativo baseado em evidências e práticas integrativas de saúde da mulher.”**
+**"Já passou por nutricionista, fez exames, tentou de tudo e ainda não conseguiu? Cadastre seu e-mail e descubra a abordagem integrativa que transforma casos considerados impossíveis em vitórias reais."**
+
+---
+
+## **Variação 4 – Científica \+ Esperançosa**
+
+**"Cadastre seu e-mail e receba acesso ao Guia dos 90 Dias e ao Workshop Mulheres Mais Férteis — baseado em ciência integrativa, medicina chinesa e os fundamentos que ajudaram mais de 700 casais a transformarem sua jornada."**
 
 ---
 
 # **🌿 2\. E-MAIL DE CONFIRMAÇÃO DE OPT-IN (NEUTRO E PROFISSIONAL)**
 
-### **Assunto: Seu acesso chegou — bem-vinda\!**
+### **Assunto: Seu acesso chegou — vem comigo\!**
 
-**Olá\! 😊**
+**Olá\! 💛**
 
 **Que bom ter você aqui.**
 
-**Você acaba de receber acesso aos materiais iniciais sobre fertilidade integrativa, uma abordagem que reúne hábitos, alimentação, equilíbrio emocional e saúde da mulher de forma completa — sempre trabalhando ao lado da medicina tradicional, e nunca como substituição.**
+**Você acaba de receber acesso aos materiais iniciais sobre fertilidade integrativa — uma abordagem que integra corpo, mente e energia, reunindo medicina chinesa, nutrição funcional, biofísica e o olhar sobre os 90 dias que influenciam a preparação do óvulo.**
+
+**Tudo isso trabalhando ao lado da medicina tradicional, nunca como substituição.**
 
 **Nos próximos minutos você receberá:**
 
-* **O Guia dos 90 Dias, com fundamentos essenciais**
+* **O Guia dos 90 Dias — com os fundamentos que você precisa entender**
 
 * **O convite para participar do Workshop Mulheres Mais Férteis**
 
-* **Conteúdos educativos preparados com muito carinho**
+* **Conteúdos que vão te ajudar a enxergar o que muitos profissionais não conseguem ver**
 
-**Fique à vontade para explorar tudo no seu tempo.**  
- **Estamos felizes em caminhar com você nessa jornada. 💛**
+**Explore no seu tempo.**
+ **Eu te aguardo no workshop. Vai ser transformador. 💛**
 
-**Com carinho,**  
+**Com carinho,**
  **Equipe Fernanda Padovani**
 
 ---
 
 # **🌿 3\. E-MAIL AUTOMÁTICO APÓS A COMPRA DO INGRESSO**
 
-### **Assunto: Ingresso confirmado\! Veja os próximos passos**
+### **Assunto: Seu ingresso está garantido — te aguardo\!**
 
 **Olá\!**
 
-**Seu ingresso para o Workshop Mulheres Mais Férteis está oficialmente garantido. 💛**
+**Sua inscrição para o Workshop Mulheres Mais Férteis está confirmada. 💛**
 
-**A seguir, os detalhes importantes:**
+**Guarde este e-mail com os detalhes importantes:**
 
 ### **✔ Sua inscrição**
 
-**Confirmada com sucesso. Guarde este e-mail.**
+**Confirmada com sucesso.**
 
 ### **✔ Link de acesso**
 
@@ -75,24 +77,26 @@
 
 ### **✔ Coloque na agenda**
 
-**Data:**  
- **Horário:**  
- **Local: Online.**
+**Data:**
+ **Horário:**
+ **Local: 100% online**
 
 ---
 
-**Durante o encontro, você vai aprender:**
+**Durante o workshop, você vai aprender:**
 
-* **Fatores que influenciam a fertilidade de forma natural**
+* **Os fatores que influenciam a fertilidade — e que a maioria dos profissionais não olha de forma integrada**
 
-* **Como organizar um plano pessoal de cuidado para os próximos 90 dias**
+* **Como os 90 dias de preparação do óvulo funcionam e por que esse período é tão importante**
 
-* **Hábitos e estratégias que auxiliam mulheres a melhorar o bem-estar reprodutivo**
+* **A conexão entre alimentação, hormônios, emoções e fertilidade**
 
-**Será um momento leve, informativo e transformador.**  
- **Obrigada por estar com a gente. 💛**
+* **Estratégias práticas para organizar seu caminho com mais clareza e direção**
 
-**Com carinho,**  
+**Vai ser um encontro transformador.**
+ **Eu te aguardo lá. 💛**
+
+**Com carinho,**
  **Equipe Fernanda Padovani**
 
 ---
@@ -101,174 +105,189 @@
 
 ### **✔ Variação 1**
 
-**“Seu ingresso está confirmado\! 🎉**  
- **Te enviamos por e-mail o link do evento e os próximos passos. Qualquer dúvida, estamos por aqui 💛”**
+**"Seu ingresso está confirmado\! 💛**
+ **Enviamos por e-mail o link do evento e os próximos passos. Qualquer dúvida, estamos aqui.**
+ **Te aguardo no workshop\!"**
 
 ### **✔ Variação 2**
 
-**“Parabéns pela inscrição 💛**  
- **O e-mail com o link e todas as informações do workshop já foi enviado. Confira sua caixa de entrada\!”**
+**"Sua inscrição foi confirmada 💛**
+ **Confira seu e-mail com o link e todas as informações do workshop.**
+ **Vai ser transformador\!"**
 
 ### **✔ Variação 3**
 
-**“Tudo certo com sua inscrição\! 🙌**  
- **Cheque seu e-mail para ver o link do evento e dicas importantes de preparação.”**
+**"Tudo certo com sua inscrição\! 🙌**
+ **Cheque seu e-mail para o link do evento.**
+ **Nos vemos lá\!"**
 
 ---
 
 # **🌿 5\. E-MAIL DE AQUECIMENTO (NEUTRO)**
 
-### **Assunto: Antes do workshop, uma mensagem importante**
+### **Assunto: Uma mensagem importante antes do workshop**
 
 **Olá\! Aqui é a Fernanda. 💛**
 
-**Quero te dar as boas-vindas e agradecer pela sua presença no nosso próximo workshop.**
+**Quero te dar as boas-vindas e agradecer por estar com a gente nesse próximo workshop.**
 
-**Muitas mulheres que acompanho ao longo dos anos descobriram que entender o próprio corpo com mais profundidade faz toda a diferença. Durante o evento, vamos falar sobre:**
+**Ao longo de mais de 20 anos de experiência, acompanhei centenas de mulheres que descobriram que entender o próprio corpo de forma integrativa faz toda a diferença. E é exatamente isso que vamos explorar juntas durante o evento:**
 
-* **Como fatores do dia a dia influenciam sua fertilidade**
+* **Como fatores do dia a dia — alimentação, toxinas, emoções — influenciam sua fertilidade de forma que a maioria não enxerga**
 
-* **A importância dos 90 dias de preparação**
+* **Por que os 90 dias de preparação do óvulo são tão importantes**
 
-* **Hábitos, alimentação e bem-estar que podem ajudar no processo**
+* **A conexão entre fígado, tireoide, intestino e ovários — e como isso impacta tudo**
 
-* **Como integrar diferentes áreas da saúde de forma equilibrada**
+* **Como integrar medicina chinesa, nutrição funcional e biofísica de forma prática**
 
-**Nada aqui substitui tratamentos médicos — pelo contrário, meu objetivo sempre foi complementar, organizar e ajudar você a ter mais clareza e segurança.**
+**Nada aqui substitui tratamentos médicos — pelo contrário, meu objetivo sempre foi complementar e te ajudar a ter mais clareza sobre o que o seu corpo precisa.**
 
-**Nos vemos no evento\!**  
- **Vai ser especial.**
+**Te aguardo no evento\!**
+ **Vai ser transformador.**
 
-**Com carinho,**  
+**Com carinho,**
  **Fernanda Padovani**
 
 **Escrever ou revisar copys dos anúncios \- 1ª rodada**
 
-# **ANÚNCIO 1 — “Os 90 Dias Que Mudam Tudo”**
+# **ANÚNCIO 1 — "Os 90 Dias Que Fazem Diferença"**
 
-**Texto principal:**  
- **A fertilidade feminina é influenciada por uma série de fatores que vão além dos exames tradicionais.**  
- **No Workshop Mulheres Mais Férteis, você vai entender como alimentação, estilo de vida, ambiente, emoções e equilíbrio fisiológico trabalham em conjunto durante os 90 dias de preparação do óvulo.**
+**Texto principal:**
+ **Você sabia que o óvulo leva 90 dias para amadurecer? E que tudo o que você faz nesse período influencia diretamente sua fertilidade?**
+ **No Workshop Mulheres Mais Férteis, você vai entender como alimentação, toxinas, hormônios, emoções e o eixo fígado-tireoide-ovário trabalham em conjunto — e o que a maioria dos profissionais não olha de forma integrada.**
 
-**Headline:**  
- **Os 90 dias que fazem diferença**
+**Headline:**
+ **Os 90 dias que fazem diferença na sua fertilidade**
 
-**Descrição (opcional):**  
- **Workshop educativo, online, acessível e baseado em ciência integrativa.**
-
----
-
-# **✅ ANÚNCIO 2 — “Pequenas Mudanças, Grande Impacto”**
-
-**Texto principal:**  
- **Muitas mulheres não sabem que pequenos ajustes diários podem contribuir positivamente para seu bem-estar reprodutivo.**  
- **Neste workshop, você aprende estratégias simples e seguras para aplicar imediatamente — sempre em harmonia com acompanhamento profissional.**
-
-**Headline:**  
- **Pequenas mudanças, grandes resultados**
+**Descrição (opcional):**
+ **Workshop online baseado em ciência integrativa, medicina chinesa e mais de 20 anos de experiência.**
 
 ---
 
-# **✅ ANÚNCIO 3 — “Fertilidade Integrativa Explicada”**
+# **✅ ANÚNCIO 2 — "O Que Ninguém Te Conta"**
 
-**Texto principal:**  
- **A fertilidade não é um sistema isolado.**  
- **Ela depende de digestão, inflamação, hormônios, sono, energia, emoções e mais.**  
- **O Workshop Mulheres Mais Férteis apresenta, de forma clara, como cada pilar influencia o outro.**
+**Texto principal:**
+ **E se eu te falar que a dificuldade de engravidar pode estar ligada a toxinas do dia a dia, desequilíbrio intestinal ou dominância de estrogênio — e que a maioria dos exames tradicionais não investigam isso?**
+ **No Workshop Mulheres Mais Férteis, você vai aprender a enxergar o que 90% dos profissionais não conseguem ver — e estratégias práticas que funcionam.**
 
-**Headline:**  
- **Entenda o que influencia sua fertilidade**
-
----
-
-# **✅ ANÚNCIO 4 — “Para quem já tentou de tudo”**
-
-**Texto principal:**  
- **Se você sente que já fez várias tentativas, mas não sabe qual o próximo passo, este workshop pode trazer clareza.**  
- **Um encontro leve, educativo e baseado em práticas integrativas que complementam qualquer cuidado tradicional.**
-
-**Headline:**  
- **Clareza sobre o próximo passo**
+**Headline:**
+ **Descubra o que ninguém te explica sobre fertilidade**
 
 ---
 
-# **✅ ANÚNCIO 5 — “Sua Jornada Não Precisa Ser Solitária”**
+# **✅ ANÚNCIO 3 — "Fertilidade é Sobre Conexão"**
 
-**Texto principal:**  
- **A jornada da fertilidade pode ser desafiadora — mas você não precisa vivê-la sozinha.**  
- **Esse workshop foi criado para compartilhar informações seguras, acolhedoras e atualizadas sobre saúde reprodutiva.**
+**Texto principal:**
+ **A fertilidade não é um sistema isolado.**
+ **Ela depende da saúde do fígado, da tireoide, do intestino, da qualidade do sono, do equilíbrio emocional e de muito mais.**
+ **No Workshop Mulheres Mais Férteis, você vai entender essas conexões que a maioria não enxerga — e como cuidar de cada pilar de forma integrada.**
 
-**Headline:**  
- **Informação que acolhe e orienta**
-
----
-
-# **✅ ANÚNCIO 6 — “Seus próximos 90 dias começam aqui”**
-
-**Texto principal:**  
- **O óvulo leva até 90 dias para amadurecer.**  
- **Aprender o que influencia esse processo pode trazer mais consciência, organização e tranquilidade para sua jornada.**
-
-**Headline:**  
- **Comece os próximos 90 dias com direção**
+**Headline:**
+ **Enxergue as conexões que influenciam sua fertilidade**
 
 ---
 
-# **✅ ANÚNCIO 7 — “Conhecimento para quem busca equilíbrio”**
+# **✅ ANÚNCIO 4 — "Para Quem Já Tentou de Tudo"**
 
-**Texto principal:**  
- **Este workshop foi criado para mulheres que desejam entender sua fertilidade de forma mais completa — unindo ciência, hábitos e autocuidado.**  
- **Sem radicalismos. Sem promessas. Só informação qualificada.**
+**Texto principal:**
+ **Já passou por nutricionista, fez mil exames, tentou tratamentos — e ainda não conseguiu?**
+ **Talvez não se sinta culpada. Às vezes você está dando o seu melhor, mas o que te foi orientado não é o que o seu corpo precisa.**
+ **No Workshop Mulheres Mais Férteis, você vai descobrir o olhar integrativo que pode estar faltando no seu caminho.**
 
-**Headline:**  
- **Equilíbrio e conhecimento**
-
----
-
-# **✅ ANÚNCIO 8 — “O Evento Para Quem Quer Entender Seu Corpo”**
-
-**Texto principal:**  
- **Você vai aprender o que realmente pode influenciar sua fertilidade e como organizar um plano simples e seguro de autocuidado.**
-
-**Headline:**  
- **Aprenda a entender seu corpo**
+**Headline:**
+ **Para quem já tentou de tudo e precisa de um novo caminho**
 
 ---
 
-# **✅ ANÚNCIO 9 — “Descubra o que ninguém te explica de forma simples”**
+# **✅ ANÚNCIO 5 — "Diagnóstico Não é Sentença"**
 
-**Texto principal:**  
- **Hormônios, metabolismo, estresse, inflamação e hábitos — tudo se conecta.**  
- **No workshop, você vai compreender essa integração de forma leve e prática.**
+**Texto principal:**
+ **Endometriose. SOP. Reserva ovariana baixa. Menopausa precoce.**
+ **E se eu te falar que ter um diagnóstico não significa que é impossível?**
+ **Eu vivi isso aos 34 anos — falência ovariana — e hoje tenho meu filho de 6 anos. Não foi sorte, foi método.**
+ **Te aguardo no Workshop Mulheres Mais Férteis para te mostrar esse caminho.**
 
-**Headline:**  
- **Fertilidade explicada de forma clara**
+**Headline:**
+ **Diagnóstico não é sentença — descubra o método**
 
 ---
 
-# **✅ ANÚNCIO 10 — “Fertilidade é sobre conexão”**
+# **✅ ANÚNCIO 6 — "Seus Próximos 90 Dias Começam Aqui"**
 
-**Texto principal:**  
- **O corpo funciona como um sistema.**  
- **Quando um pilar está fora de equilíbrio, outros podem ser afetados — inclusive a fertilidade.**  
- **Aprenda como enxergar essas conexões e cuidar de cada área com mais consciência.**
+**Texto principal:**
+ **Você sabia que o óvulo leva 90 dias para amadurecer — e que tudo o que você faz nesse período influencia a qualidade dele?**
+ **Alimentação, toxinas, sono, estresse, saúde intestinal — tudo importa.**
+ **No Workshop Mulheres Mais Férteis, você vai aprender a organizar esses 90 dias com estratégia e clareza.**
 
-**Headline:**  
- **Veja o corpo de forma integrada**
+**Headline:**
+ **Organize seus próximos 90 dias com direção**
+
+---
+
+# **✅ ANÚNCIO 7 — "Mais de 700 Casais Já Transformaram"**
+
+**Texto principal:**
+ **Casos considerados impossíveis que viraram vitórias reais.**
+ **Mulheres que já tinham ouvido "sinto muito" demais vezes — e conseguiram.**
+ **No Workshop Mulheres Mais Férteis, eu vou te mostrar a abordagem integrativa que transformou mais de 700 jornadas.**
+ **Método científico. Resultados reais.**
+
+**Headline:**
+ **Descubra o método que ajudou mais de 700 casais**
+
+---
+
+# **✅ ANÚNCIO 8 — "O Que Seu Corpo Está Querendo Te Dizer"**
+
+**Texto principal:**
+ **TPM intensa, ciclos irregulares, candidíase de repetição — o corpo está te dizendo algo.**
+ **Não é colocar probiótico ou kombucha que vai resolver.**
+ **É preciso entender a causa raiz: dominância de estrogênio, permeabilidade intestinal, disbiose.**
+ **Te aguardo no Workshop Mulheres Mais Férteis para te ensinar a enxergar isso.**
+
+**Headline:**
+ **Entenda o que seu corpo está querendo te dizer**
+
+---
+
+# **✅ ANÚNCIO 9 — "Medicina Chinesa + Nutrição Funcional + Biofísica"**
+
+**Texto principal:**
+ **A gente não trata o sintoma, trata a causa.**
+ **A gente não trata o final, trata o início.**
+ **No Workshop Mulheres Mais Férteis, você vai aprender a integração que nenhum outro profissional traz: medicina chinesa, nutrição funcional, biofísica e o olhar sobre energia e emoções.**
+
+**Headline:**
+ **A integração que transforma impossíveis em vitórias**
+
+---
+
+# **✅ ANÚNCIO 10 — "Para Quem Já Investiu Demais em FIVs"**
+
+**Texto principal:**
+ **Já gastou R$40 mil, R$60 mil em FIVs que não funcionaram?**
+ **E se o problema não for falta de tecnologia, mas sim a preparação do corpo?**
+ **No Workshop Mulheres Mais Férteis, você vai entender o que precisa estar equilibrado ANTES de qualquer tratamento — e como isso pode mudar tudo.**
+
+**Headline:**
+ **Prepare seu corpo antes da próxima tentativa**
 
 ---
 
 # **🚀 BONUS — COPYS CURTAS PARA META ADS**
 
-* **“O que influencia sua fertilidade? Descubra no workshop.”**
+* **"Diagnóstico não é sentença. Descubra o método."**
 
-* **“Um olhar integrativo para apoiar sua jornada.”**
+* **"Os 90 dias que fazem diferença na sua fertilidade."**
 
-* **“Saúde reprodutiva começa nos pequenos hábitos.”**
+* **"Enxergue o que 90% dos profissionais não conseguem ver."**
 
-* **“Aprenda como os próximos 90 dias podem transformar seu caminho.”**
+* **"Mais de 700 casais já transformaram — você pode ser a próxima."**
 
-* **“Informação que traz clareza, acolhimento e direção.”**
+* **"Já tentou de tudo? Descubra o que pode estar faltando."**
+
+* **"A integração de medicina chinesa, nutrição funcional e biofísica."**
 
 ---
 
@@ -276,12 +295,13 @@
 
 **Texto objetivo para anúncios mais regulados:**
 
-**Texto principal:**  
- **Evento online sobre saúde hormonal e reprodutiva.**  
- **Conteúdo educativo, baseado em ciência integrativa e adequado a todas as mulheres em fase de preparação para engravidar.**
+**Texto principal:**
+ **Workshop online sobre fertilidade feminina e saúde reprodutiva.**
+ **Conteúdo educativo baseado em ciência integrativa, medicina chinesa, nutrição funcional e mais de 20 anos de experiência clínica.**
+ **Adequado para mulheres em fase de preparação para engravidar.**
 
-**Headline:**  
- **Evento sobre saúde reprodutiva**
+**Headline:**
+ **Workshop Mulheres Mais Férteis — Evento Online**
 
 **Escrever ou revisar copys dos anúncios de virada de lote**
 
@@ -291,24 +311,24 @@
 
 ### **1.1**
 
-**Último dia do lote atual.**  
- **O Workshop Mulheres Mais Férteis terá reajuste no próximo lote.**  
- **Garanta sua vaga com o valor reduzido.**
+**Hoje é o último dia do lote atual.**
+**O Workshop Mulheres Mais Férteis terá ajuste de valor no próximo lote.**
+**Se você já pretendia participar, este é o melhor momento.**
 
 ### **1.2**
 
-**O lote muda hoje.**  
- **Aproveite o valor atual para participar do workshop sobre fertilidade integrativa.**
+**O lote muda hoje.**
+**Garanta sua vaga com o valor atual — uma aula clara e prática sobre fertilidade integrativa.**
 
 ### **1.3**
 
-**O preço sobe à meia-noite.**  
- **Ainda dá tempo de garantir sua vaga no Workshop Mulheres Mais Férteis.**
+**O valor muda à meia-noite.**
+**Se faz sentido para você, ainda dá tempo de garantir sua vaga no Workshop Mulheres Mais Férteis.**
 
 ### **1.4**
 
-**Lote virando nas próximas horas.**  
- **Participe do evento e aprenda como os 90 dias influenciam sua fertilidade.**
+**Lote virando nas próximas horas.**
+**Vem comigo entender como os 90 dias influenciam sua fertilidade de verdade.**
 
 ---
 
@@ -316,25 +336,25 @@
 
 ### **2.1**
 
-**O lote do Workshop Mulheres Mais Férteis está virando hoje.**  
- **Se você deseja participar do encontro e aprender, com clareza, como hábitos, alimentação e equilíbrio emocional influenciam a fertilidade, esta é a melhor oportunidade para garantir sua vaga com o valor atual.**
+**O lote do Workshop Mulheres Mais Férteis vira hoje.**
+**Se você quer participar e aprender, de forma clara e prática, como hábitos, alimentação e equilíbrio emocional influenciam a fertilidade, este é o momento de garantir sua vaga com o valor atual.**
 
 ### **2.2**
 
-**Estamos encerrando o lote vigente do workshop.**  
- **A partir da virada, o valor será ajustado.**  
- **Se deseja participar de um encontro educativo sobre saúde reprodutiva e preparação dos 90 dias, aproveite o valor reduzido enquanto ainda está disponível.**
+**Estamos encerrando o lote atual do workshop.**
+**A partir de amanhã, o valor será ajustado.**
+**Se você deseja participar desse encontro educativo sobre saúde reprodutiva e os 90 dias de preparação do óvulo, aproveite o valor atual enquanto ainda está ativo.**
 
 ### **2.3**
 
-**Últimas horas para aproveitar o lote atual do Workshop Mulheres Mais Férteis.**  
- **Um evento criado para esclarecer, de forma prática e embasada, o que realmente influencia a fertilidade.**  
- **Garanta sua participação antes do ajuste de preço.**
+**Últimas horas do lote atual do Workshop Mulheres Mais Férteis.**
+**Uma aula criada para te trazer clareza, de forma prática e embasada, sobre o que realmente influencia a fertilidade.**
+**Se faz sentido para você, garanta sua vaga antes do ajuste.**
 
 ### **2.4**
 
-**O valor do workshop será atualizado em breve.**  
- **Caso deseje participar do encontro sobre fertilidade integrativa e entender como diferentes pilares influenciam o corpo, este é o momento ideal para garantir sua vaga com condição especial.**
+**O valor do workshop será atualizado em breve.**
+**Se você quer participar desse encontro sobre fertilidade integrativa e entender como diferentes fatores se conectam no corpo, este é o melhor momento para garantir sua vaga.**
 
 ---
 
@@ -342,27 +362,27 @@
 
 ### **3.1**
 
-**Estamos encerrando o lote atual do Workshop Mulheres Mais Férteis — um encontro educativo que apresenta, de forma clara e integrativa, como fatores como alimentação, sono, hormônios, inflamação e emoções influenciam o processo reprodutivo.**
+**Estamos encerrando o lote atual do Workshop Mulheres Mais Férteis — um encontro educativo que te mostra, de forma clara e integrativa, como alimentação, sono, hormônios, inflamação e emoções se conectam e influenciam o processo reprodutivo.**
 
-**Se você deseja participar, este é o último momento para garantir sua vaga com o valor reduzido, antes do reajuste do próximo lote.**
+**Se você quer participar, este é o último momento para garantir sua vaga com o valor atual, antes do ajuste do próximo lote.**
 
-**A oportunidade permanece exatamente a mesma — apenas o valor será atualizado.**  
- **Aproveite enquanto o lote atual ainda está disponível.**
+**O conteúdo permanece exatamente o mesmo — apenas o valor será atualizado.**
+**Aproveite enquanto o lote atual ainda está disponível.**
 
 ### **3.2**
 
-**Hoje é o último dia para garantir o Workshop Mulheres Mais Férteis pelo valor atual.**  
- **O evento foi criado para oferecer clareza e organização para mulheres que desejam entender melhor seus ciclos, seus 90 dias de preparação e os fatores que influenciam a fertilidade.**
+**Hoje é o último dia para garantir o Workshop Mulheres Mais Férteis com o valor atual.**
+**Esse encontro foi criado para trazer clareza e organização para mulheres que querem entender melhor seus ciclos, os 90 dias de preparação do óvulo e os fatores que realmente influenciam a fertilidade.**
 
-**O conteúdo é seguro, leve e complementar a qualquer acompanhamento profissional que você já esteja fazendo.**  
- **Se deseja participar, aproveite a condição do lote antes que seja atualizado.**
+**O conteúdo é seguro, embasado e complementar a qualquer acompanhamento profissional que você já esteja fazendo.**
+**Se você quer participar, aproveite o valor do lote atual antes que ele mude.**
 
 ### **3.3**
 
-**O lote atual do Workshop Mulheres Mais Férteis está prestes a encerrar.**  
- **A partir da virada, o valor será ajustado para o próximo lote.**
+**O lote atual do Workshop Mulheres Mais Férteis está prestes a encerrar.**
+**A partir de amanhã, o valor será ajustado.**
 
-**Se você tem interesse em aprender sobre saúde reprodutiva sob a perspectiva integrativa — sem promessas, sem extremismos, apenas informação clara — este é o melhor momento para garantir sua participação.**
+**Se você tem interesse em aprender sobre saúde reprodutiva com uma perspectiva integrativa — sem promessas milagrosas, sem extremismos, apenas informação clara e acionável — este é o melhor momento para garantir sua vaga.**
 
 ---
 
@@ -370,25 +390,25 @@
 
 ### **4.1 — Ângulo racional**
 
-**Últimas horas do lote vigente.**  
- **Garanta sua vaga no Workshop Mulheres Mais Férteis antes do reajuste.**
+**Últimas horas do lote atual.**
+**Garanta sua vaga no Workshop Mulheres Mais Férteis antes do ajuste de valor.**
 
 ### **4.2 — Ângulo educativo**
 
-**O conteúdo do workshop permanece o mesmo — o valor, não.**  
- **Aproveite o lote atual antes que o preço seja atualizado.**
+**O conteúdo do workshop permanece o mesmo — o valor, não.**
+**Se você já pretendia participar, aproveite o lote atual antes da atualização.**
 
 ### **4.3 — Ângulo direto**
 
-**Lote vira hoje.**  
- **Valor sobe no próximo lote.**  
- **Garanta sua vaga agora.**
+**Lote vira hoje.**
+**Valor muda no próximo lote.**
+**Se faz sentido para você, garanta sua vaga agora.**
 
 ### **4.4 — Ângulo leve e acolhedor**
 
-**Se você pretende participar do Workshop Mulheres Mais Férteis, este é um bom momento.**  
- **O lote muda hoje e o valor será reajustado.**  
- **Aproveite enquanto o preço especial ainda está ativo.**
+**Se você quer participar do Workshop Mulheres Mais Férteis, este é o melhor momento.**
+**O lote muda hoje e o valor será ajustado.**
+**Aproveite enquanto o valor atual ainda está disponível.**
 
 ---
 
@@ -412,24 +432,24 @@
 
 # **VERSÃO 1 — PROFISSIONAL \+ ACOLHEDORA (RECOMENDADA)**
 
-**Bem-vinda ao Grupo Oficial do Workshop Mulheres Mais Férteis\! 💛**  
- **Aqui você receberá:**
+**Seja bem-vinda ao Grupo Oficial do Workshop Mulheres Mais Férteis\! 💛**
+**Aqui você vai receber:**
 
-**✔ Links de acesso ao evento**  
- **✔ Materiais complementares**  
- **✔ Lembretes importantes**  
- **✔ Informações oficiais da equipe**
+**✔ Links de acesso ao evento**
+**✔ Materiais complementares**
+**✔ Lembretes importantes**
+**✔ Informações oficiais da equipe**
 
-**Regras do grupo:**  
- **1️⃣ Este é um grupo *exclusivamente informativo* — apenas admins enviam mensagens.**  
- **2️⃣ Não é permitido enviar dúvidas no grupo (teremos canais específicos durante o evento).**  
- **3️⃣ Não compartilhamos diagnósticos, tratamentos ou mensagens pessoais aqui.**  
- **4️⃣ Respeitamos todas as abordagens de saúde: este grupo é um espaço neutro, seguro e acolhedor.**
+**Regras do grupo:**
+**1️⃣ Este é um grupo *exclusivamente informativo* — apenas admins enviam mensagens.**
+**2️⃣ Não compartilhamos dúvidas aqui (teremos canais específicos durante o evento).**
+**3️⃣ Não compartilhamos diagnósticos, tratamentos ou mensagens pessoais.**
+**4️⃣ Respeitamos todas as abordagens de saúde: este é um espaço neutro, seguro e acolhedor.**
 
-**Guarde este link:**  
- **🔗 Acesso ao Workshop: \[inserir link\]**
+**Guarde este link:**
+**🔗 Acesso ao Workshop: \[inserir link\]**
 
-**Fique tranquila: enviaremos todos os lembretes por aqui. Será uma alegria ter você no evento\! 🌷**
+**Fique tranquila: vamos te enviar todos os lembretes necessários por aqui. Será uma alegria te receber no evento\! 🌷**
 
 ---
 
@@ -437,19 +457,19 @@
 
 **Bem-vinda ao grupo oficial do Workshop Mulheres Mais Férteis\!**
 
-**Aqui enviaremos:**  
- **✔ Link do evento**  
- **✔ Materiais**  
- **✔ Lembretes e comunicados**
+**Aqui você recebe:**
+**✔ Link do evento**
+**✔ Materiais**
+**✔ Lembretes e comunicados**
 
-**Regras:**  
- **• Somente administradores enviam mensagens**  
- **• Nada de diagnósticos, prints ou pedidos pessoais**  
- **• Ambiente 100% acolhedor e respeitoso**
+**Regras:**
+**• Somente administradores enviam mensagens**
+**• Não compartilhamos diagnósticos, prints ou pedidos pessoais**
+**• Ambiente acolhedor e respeitoso**
 
 **🔗 Link do Workshop: \[inserir\]**
 
-**Obrigada por estar aqui\! 💛**
+**Que alegria ter você aqui\! 💛**
 
 ---
 
@@ -457,21 +477,21 @@
 
 **Seja muito bem-vinda ao Grupo Oficial do Workshop Mulheres Mais Férteis\! 💛**
 
-**Esse espaço existe para facilitar sua jornada até o evento.**  
- **Por aqui você receberá:**  
- **✨ Link de acesso**  
- **✨ Materiais**  
- **✨ Avisos importantes**  
- **✨ Lembretes para você não perder nada**
+**Esse espaço existe para facilitar sua jornada até o evento.**
+**Por aqui você recebe:**
+**✨ Link de acesso**
+**✨ Materiais**
+**✨ Avisos importantes**
+**✨ Lembretes para você não perder nada**
 
-**Regras do grupo:**  
- **• Grupo silencioso (somente admins).**  
- **• Não compartilhamos informações pessoais ou relatos médicos.**  
- **• Mantemos sempre respeito, cuidado e acolhimento.**
+**Regras do grupo:**
+**• Grupo silencioso (somente admins enviam mensagens).**
+**• Não compartilhamos informações pessoais ou relatos médicos.**
+**• Mantemos sempre respeito, cuidado e acolhimento.**
 
 **🔗 Link do Workshop: \[inserir link\]**
 
-**Vai ser um encontro lindo. Estamos felizes em ter você com a gente\! 🌸**
+**Vai ser um encontro especial. Estamos felizes em ter você com a gente\! 🌸**
 
 ---
 
@@ -521,10 +541,10 @@
 
 ### **Assunto: Sua inscrição está confirmada\! Aqui estão os próximos passos 🌷**
 
-**Olá\! 💛**  
- **É um prazer enorme ter você no Workshop Mulheres Mais Férteis.**
+**Olá\! 💛**
+**Que alegria ter você no Workshop Mulheres Mais Férteis.**
 
-**Sua inscrição foi confirmada com sucesso e este e-mail contém todas as informações importantes para que você aproveite ao máximo o evento.**
+**Sua inscrição foi confirmada com sucesso e este e-mail tem todas as informações importantes para você aproveitar ao máximo o evento.**
 
 ---
 
@@ -532,66 +552,66 @@
 
 **👉 \[INSERIR LINK DO EVENTO\]**
 
-**Guarde esse link — ele será o mesmo para entrar no dia.**
+**Salve esse link — ele será o mesmo para entrar no dia.**
 
 ---
 
 ## **✅ 2\. Data e horário do encontro**
 
-**🗓 Data: \[inserir\]**  
- **⏰ Horário: \[inserir\]**  
- **📍 Local: 100% online (pelo link acima)**
+**🗓 Data: \[inserir\]**
+**⏰ Horário: \[inserir\]**
+**📍 Local: 100% online (pelo link acima)**
 
-**Recomendamos colocar na agenda para não correr o risco de perder.**
+**Coloque na sua agenda para não perder.**
 
 ---
 
 ## **✅ 3\. O que você vai aprender**
 
-**Durante o workshop, você terá acesso a um conteúdo claro e objetivo sobre:**
+**Durante o workshop, você vai receber um conteúdo claro e prático sobre:**
 
-**• Os fatores que influenciam a saúde reprodutiva**  
- **• Como funcionam os 90 dias de preparação do óvulo**  
- **• Hábitos e estratégias que contribuem para o equilíbrio do corpo**  
- **• Como integrar cuidados de forma simples e prática no dia a dia**
+**• Os fatores que realmente influenciam a saúde reprodutiva**
+**• Como funcionam os 90 dias de preparação do óvulo**
+**• Hábitos e estratégias que ajudam o equilíbrio do corpo**
+**• Como integrar esses cuidados de forma simples no seu dia a dia**
 
-**É um encontro educativo, complementar a qualquer acompanhamento profissional que você já faça, e criado para trazer mais clareza, organização e bem-estar à sua jornada.**
+**É um encontro educativo, complementar a qualquer acompanhamento profissional que você já faça, criado para trazer mais clareza, organização e leveza à sua jornada.**
 
 ---
 
 ## **✅ 4\. Acesso ao grupo de WhatsApp (opcional, mas recomendado)**
 
-**Por lá enviaremos lembretes, materiais e atualizações:**  
- **👉 \[INSERIR LINK DO GRUPO\]**
+**Por lá você recebe lembretes, materiais e atualizações:**
+**👉 \[INSERIR LINK DO GRUPO\]**
 
 ---
 
 ## **💛 Uma mensagem especial**
 
-**Agradecemos profundamente sua presença.**  
- **Cuidar de si com informação e consciência é um passo importante — e estamos felizes em caminhar com você nesse processo.**
+**Te aguardo com muito carinho.**
+**Cuidar de si com informação e consciência é um passo importante — e estamos felizes em caminhar com você nesse processo.**
 
-**Qualquer dúvida, estamos à disposição.**  
- **Nos vemos no evento\! 🌷**
+**Qualquer dúvida, estou à disposição.**
+**Nos vemos no evento\! 🌷**
 
-**Com carinho,**  
- **Equipe Fernanda Padovani**
+**Com carinho,**
+**Fernanda Padovani**
 
 **Escrever ou revisar a copy da mensagem de boas-vindas**
 
 # **VERSÃO 1 — ACOLHEDORA \+ PROFISSIONAL (RECOMENDADA)**
 
-**Olá\! 👋💛**  
- **Seja muito bem-vinda ao Grupo Oficial do Workshop Mulheres Mais Férteis.**
+**Olá\! 👋💛**
+**Seja muito bem-vinda ao Grupo Oficial do Workshop Mulheres Mais Férteis.**
 
-**Por aqui você receberá:**  
- **• O link de acesso ao evento**  
- **• Lembretes importantes**  
- **• Materiais complementares**  
- **• Atualizações oficiais da equipe**
+**Por aqui você recebe:**
+**• O link de acesso ao evento**
+**• Lembretes importantes**
+**• Materiais complementares**
+**• Atualizações oficiais da equipe**
 
-**Este é um grupo silencioso para manter tudo organizado e fácil de acompanhar.**  
- **Ficamos felizes em ter você com a gente\! 🌷**
+**Este é um grupo silencioso para manter tudo organizado e fácil de acompanhar.**
+**Que alegria ter você com a gente\! 🌷**
 
 ---
 
@@ -1534,9 +1554,9 @@
 
 ### **Pré-header: Uma pequena preparação para você aproveitar muito mais a aula.**
 
-**Olá\! 💛**  
- **Fico muito feliz de ter você com a gente no Workshop Mulheres Mais Férteis.**  
- **E para que você aproveite ao máximo o conteúdo, quero começar te enviando uma informação importante — simples, mas essencial.**
+**Olá\! 💛**
+**Que alegria ter você com a gente no Workshop Mulheres Mais Férteis.**
+**E para que você aproveite ao máximo o conteúdo, quero começar te enviando uma informação importante — simples, mas essencial.**
 
 ---
 
@@ -3239,12 +3259,12 @@
 
 ### **Pré-header: Uma aula leve, clara e integrativa sobre o que realmente influencia o corpo nos 90 dias do óvulo.**
 
-**Olá, linda\! 💛**  
- **É com muito carinho que te escrevo hoje para anunciar que as inscrições para o Workshop Mulheres Mais Férteis estão oficialmente abertas.**
+**Olá, linda\! 💛**
+**Escrevo para você hoje com muito carinho para anunciar que as inscrições para o Workshop Mulheres Mais Férteis estão oficialmente abertas.**
 
-**Se você sente que sua jornada precisa de mais clareza, mais informação segura e menos confusão, este e-mail é para você.**
+**Se você sente que sua jornada precisa de mais clareza, mais informação segura e menos confusão — este e-mail é para você.**
 
-**Quero te explicar exatamente o que preparei para você — com calma, responsabilidade e acolhimento.**
+**Quero te explicar exatamente o que preparei — com calma, responsabilidade e acolhimento.**
 
 ---
 
@@ -3395,12 +3415,12 @@
 
 ### **Pré-header: Um lembrete claro sobre por que essa aula foi criada.**
 
-**Olá, linda\! 💛**  
- **Quero te enviar uma mensagem rápida — mas muito importante — sobre o Workshop Mulheres Mais Férteis, que está com inscrições abertas no lote atual.**
+**Olá, linda\! 💛**
+**Quero te enviar uma mensagem rápida — mas muito importante — sobre o Workshop Mulheres Mais Férteis, que está com inscrições abertas no lote atual.**
 
 **Nos últimos dias, muitas mulheres me mandaram mensagens dizendo que sempre sentiram falta de uma explicação simples e organizada sobre o que realmente influencia o corpo nos 90 dias do óvulo.**
 
-**E é exatamente isso que eu quero te entregar.**
+**E é exatamente isso que eu preparei para você.**
 
 ---
 
@@ -3861,20 +3881,20 @@
 
 ### **Pré-header: Se precisar de ajuda, estou aqui.**
 
-**Olá, linda\!**  
- **Percebi que você iniciou sua inscrição para o Workshop Mulheres Mais Férteis, mas não finalizou.**
+**Olá, linda\!**
+**Percebi que você iniciou sua inscrição para o Workshop Mulheres Mais Férteis, mas não finalizou.**
 
-**Está tudo bem — isso acontece bastante 😊**  
- **Às vezes falta tempo, às vezes outra aba chama mais atenção, às vezes bate uma dúvida.**
+**Está tudo bem — isso acontece bastante 😊**
+**Às vezes falta tempo, às vezes outra aba chama mais atenção, às vezes bate uma dúvida.**
 
-**Se você quiser concluir agora, o link está aqui:**  
- **👉 \[LINK DIRETO PARA O CHECKOUT\]**
+**Se você quiser concluir agora, o link está aqui:**
+**👉 \[LINK DIRETO PARA O CHECKOUT\]**
 
-**Se precisar de ajuda ou tiver alguma dúvida, é só responder este e-mail.**  
- **Estou aqui para te apoiar 💛**
+**Se precisar de ajuda ou tiver alguma dúvida, é só responder este e-mail.**
+**Te aguardo aqui 💛**
 
-**Com carinho,**  
- **Equipe Fernanda Padovani**
+**Com carinho,**
+**Equipe Fernanda Padovani**
 
 ---
 
@@ -4183,15 +4203,15 @@
 
 ---
 
-# **🔸 DIA \+1 — Nutrição \+ Clareza (Foco: “Entendi, mas preciso refletir”)**
+# **🔸 DIA \+1 — Nutrição \+ Clareza (Foco: "Entendi, mas preciso refletir")**
 
 ## **WHATSAPP – Mensagem 1**
 
-**Oi, linda\! 💛**  
- **Passando só para te enviar um insight importante sobre autocuidado e bem-estar reprodutivo.**  
- **Às vezes, o que falta não é esforço… é clareza sobre o que realmente influencia o corpo nos 90 dias.**  
- **Se quiser entender isso de forma leve, organizada e sem exageros, o workshop está com as inscrições abertas.**  
- **👉 \[LINK\]**
+**Oi, linda\! 💛**
+**Passando só para te enviar um insight importante sobre autocuidado e bem-estar reprodutivo.**
+**Às vezes, o que falta não é esforço… é clareza sobre o que realmente influencia o corpo nos 90 dias.**
+**Se você quer entender isso de forma leve, organizada e sem exageros, o workshop está com as inscrições abertas.**
+**👉 \[LINK\]**
 
 **Tudo no seu tempo 🌿**
 
@@ -4562,21 +4582,21 @@
 
 # **1\) MENSAGEM DE BOAS-VINDAS — WHATSAPP (S+1)**
 
-**Oi, linda\! 💛**  
- **Que alegria ter você com a gente nessa jornada.**  
- **Quero te dar as boas-vindas ao \[Nome do curso/comunidade\].**
+**Oi, linda\! 💛**
+**Que alegria ter você com a gente nessa jornada.**
+**Quero te dar as boas-vindas ao \[Nome do curso/comunidade\].**
 
-**A partir de agora, você vai receber:**
+**A partir de agora, você recebe:**
 
-**✨ conteúdos organizados**  
- **✨ orientações simples**  
- **✨ explicações claras sobre o corpo**  
- **✨ suporte com responsabilidade e acolhimento**
+**✨ conteúdos organizados**
+**✨ orientações simples**
+**✨ explicações claras sobre o corpo**
+**✨ suporte com responsabilidade e acolhimento**
 
-**Aqui está o acesso ao portal:**  
- **👉 \[LINK\]**
+**Aqui está o acesso ao portal:**
+**👉 \[LINK\]**
 
-**Qualquer dúvida, estamos por aqui 🌿**
+**Qualquer dúvida, te aguardo por aqui 🌿**
 
 ---
 
@@ -4588,25 +4608,25 @@
 
 **Olá, linda\! 💛**
 
-**É uma alegria enorme te receber no \[Nome do curso/comunidade\].**  
- **Esse espaço foi criado com muito cuidado para te trazer clareza, consciência e leveza sobre o corpo e os 90 dias.**
+**Que alegria enorme te receber no \[Nome do curso/comunidade\].**
+**Esse espaço foi criado com muito cuidado para te trazer clareza, consciência e leveza sobre o corpo e os 90 dias.**
 
-**Aqui está o link de acesso ao portal:**  
- **👉 \[LINK DE ACESSO\]**
+**Aqui está o link de acesso ao portal:**
+**👉 \[LINK DE ACESSO\]**
 
-**Dentro dele você encontrará:**
+**Dentro dele você encontra:**
 
-**• materiais organizados**  
- **• aulas claras e simples**  
- **• orientações práticas**  
- **• conteúdos integrativos**  
- **• suporte e atualizações semanais**
+**• materiais organizados**
+**• aulas claras e simples**
+**• orientações práticas**
+**• conteúdos integrativos**
+**• suporte e atualizações semanais**
 
-**Aproveite tudo no seu ritmo — sem pressa, sem cobrança.**  
- **Estamos juntas 🌿**
+**Aproveite tudo no seu ritmo — sem pressa, sem cobrança.**
+**Vem comigo nessa jornada 🌿**
 
-**Com carinho,**  
- **Fernanda**
+**Com carinho,**
+**Fernanda**
 
 ---
 
